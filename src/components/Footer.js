@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className="bg-black flex flex-col justify-around w-full items-center py-6">
       {/* Upper section with company info and contact */}
-      <div className="flex flex-col md:flex-row justify-between w-11/12 lg:w-9/12 border-b-4 border-yellow-600 pb-4">
+      <div className="flex flex-col md:flex-row justify-between w-11/12 lg:w-9/12 border-b-4 border-x-lime-700 pb-4">
         {/* Company Info Section */}
         <div className="flex flex-col items-start justify-center text-justify mb-6 md:mb-0 md:w-1/2">
           <div className="flex items-center justify-center mb-4">
@@ -28,15 +28,15 @@ const Footer = () => {
           <div className="mb-6">
             <p className="text-white font-bold text-sm md:text-lg mb-2">Contact Us:</p>
             <div className="text-white font-light text-sm md:text-base flex flex-row items-center mb-2">
-              <IconPhone style={{ color: '#FFCA4B' }} />
+              <IconPhone style={{ color: '#03C04A' }} />
               <span className="ml-2"> +91 9095726699</span>
             </div>
             <div className="text-white font-light text-sm md:text-base flex flex-row items-center mb-2">
-              <IconMailFilled style={{ color: '#FFCA4B' }} />
+              <IconMailFilled style={{ color: '#03C04A' }} />
               <span className="ml-2"> sritex06@gmail.com</span>
             </div>
             <div className="text-white font-light text-sm md:text-base flex flex-row items-center">
-              <IconMapPin style={{ color: '#FFCA4B' }} />
+              <IconMapPin style={{ color: '#03C04A' }} />
               <span className="ml-2"> No. 4/96(4), Lakshmi Nagar Kollupalayam, Near Kaniyur TollGate, Sulur, Coimbatore-641659, Tamil Nadu, India</span>
             </div>
           </div>

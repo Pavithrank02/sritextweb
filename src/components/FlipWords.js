@@ -2,15 +2,15 @@ import React from "react";
 import { FlipWords } from "../components/ui/flip-words.tsx";
 
 export function FlipWordsDemo() {
-  const words = ["better", "cute", "beautiful", "modern"];
+  const words = ["Better", "Smarter", "Harder", "Modern"];
 
   return (
-    <div className="h-[30rem] flex flex-col justify-center items-start px-4 ml-40 space-y-10">
+    <div className="h-[30rem] flex flex-col justify-center items-start mt-6 px-6 ml-40 space-y-10">
       {/* First Text Block */}
       <div className="text-6xl font-semibold text-neutral-600 dark:text-neutral-400 text-left">
         Build
         <FlipWords className="text-lime-600" words={words} /> <br />
-        websites with Aceternity UI
+        machinaries with absolute precision
       </div>
 
       {/* Second Text Block */}
