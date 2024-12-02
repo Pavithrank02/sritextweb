@@ -1,8 +1,9 @@
 import React from 'react'
+import { GalleryShow } from '../components/GalleryShow'
 
 const Gallery = () => {
   return (
-    <div>Gallery</div>
+    <div><GalleryShow /></div>
   )
 }
 

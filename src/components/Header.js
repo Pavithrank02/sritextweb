@@ -52,7 +52,7 @@ const Header = () => {
           </div>
           <div className="p-2">
             <NavLink
-              to="/capability"
+              to="/gallery"
               className={({ isActive }) =>
                 isActive
                   ? "text-green-500 border-b-2 border-green-700"
