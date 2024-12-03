@@ -13,10 +13,17 @@
 			- address
 			- social media handles icons
     - About us
+			- Description and image
+			- Fact table
+			- Team info
+			- Why Us
+			- Testimony
     - Gallery
     - Product
     - Contact
 # Website Features
 	- Tailwind css installed
 	- routing is completed
+	- home page with headers, product overview and image sliders. 
+	- 
     

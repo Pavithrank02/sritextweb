@@ -41,7 +41,7 @@ export function FocusCards({
 
   return (
     <div className="w-full px-4 py-6 border-4 border-neutral-300 rounded-xl shadow-xl">
-        <p className="text-4xl font-bold mb-5">Product Overview </p>
+        <p className="text-4xl font-extrabold mb-5 text-green-600">Product Overview </p>
       {/* Frame for the grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full">
         {cards.map((card, index) => (
