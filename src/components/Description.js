@@ -17,10 +17,10 @@ const Description = () => {
             </h1>
           </div>
           <div className="text-justify w-11/12 items-center font-medium text-xl">
-            Established in the year 2004, we, “Sritex Hi Tech Machines”, are one
-            of the prominent manufacturers and traders of a wide range of Air
+            Established in the year <span className="font-bold">2004</span>, we, <span className="font-bold">“Sritex Hi Tech Machines”, </span> are one
+            of the prominent manufacturers and traders of a wide range of <span className="font-bold">Air
             Blower, Hydraulic Press Machine, Baling Press, Belt Conveyor, Bucket
-            Elevator Belt and Conveyor Belt. We are a partnership based venture.
+            Elevator Belt and Conveyor Belt</span>. We are a partnership based venture.
             Our range is easy to operate and consume less amount of power. These
             products are offered to the clients in different sizes and
             specifications. Moreover, we have the required expertise to
