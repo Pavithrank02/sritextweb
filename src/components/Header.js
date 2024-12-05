@@ -70,7 +70,7 @@ const Header = () => {
           <NavLink
            to="/contact"
            >
-            <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm transition duration-300 ease-in-out hover:bg-green-500 hover:scale-110">
+            <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-lg font-medium transition duration-300 ease-in-out hover:bg-green-500 hover:scale-110">
               Contact now
             </button>
           </NavLink>

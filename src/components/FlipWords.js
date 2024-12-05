@@ -10,7 +10,7 @@ export function FlipWordsDemo() {
       <div className="text-5xl font-semibold text-neutral-600 dark:text-neutral-400 text-left">
         Build
         <FlipWords className="text-lime-600" words={words} /> <br />
-        machinaries with Sritex Hi Tech Machines
+        machinaries with Sritex Hi-Tech Machines
       </div>
 
       {/* Second Text Block */}

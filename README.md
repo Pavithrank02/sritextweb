@@ -19,11 +19,15 @@
 			- Why Us
 			- Testimony
     - Gallery
+			- product images display
     - Product
     - Contact
+			- Contact form
+			- Google map
 # Website Features
 	- Tailwind css installed
 	- routing is completed
 	- home page with headers, product overview and image sliders. 
-	- 
+	- about page with necessary company details
+	- contact us page with contact form and embeded google map.
     
