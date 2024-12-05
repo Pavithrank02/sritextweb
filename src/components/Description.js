@@ -16,7 +16,7 @@ const Description = () => {
               About Sritex
             </h1>
           </div>
-          <div className="text-justify w-11/12 items-center font-medium text-xl">
+          <div className="text-justify w-11/12 items-center font-normal text-xl">
             Established in the year <span className="font-bold">2004</span>, we, <span className="font-bold">“Sritex Hi Tech Machines”, </span> are one
             of the prominent manufacturers and traders of a wide range of <span className="font-bold">Air
             Blower, Hydraulic Press Machine, Baling Press, Belt Conveyor, Bucket

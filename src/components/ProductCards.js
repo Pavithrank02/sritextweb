@@ -1,10 +1,10 @@
 import { FocusCards } from "../components/ui/focus-cards.tsx";
 
-export function ProductOverview() {
+export function ProductCards() {
   const cards = [
     {
       title: "Forest Adventure",
-      src: "https://images.unsplash.com/photo-1518710843675-2540dd79065c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "https://5.imimg.com/data5/SELLER/Default/2023/6/313513084/JF/FX/TT/2995798/high-pressure-air-blower-500x500.jpeg",
     },
     {
       title: "Valley of life",
@@ -28,5 +28,5 @@ export function ProductOverview() {
     },
   ];
 
-  return <FocusCards cards={cards} size={3} width={"full"}/>;
+  return <FocusCards cards={cards} size={4} width={"11/12"}/>;
 }
