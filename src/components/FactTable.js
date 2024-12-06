@@ -15,7 +15,7 @@ const FactTable = () => {
     'Other': 'Canara Bank',
     'GST No.': '33ABIFS9750L1ZL',
   });
-
+//
   const tableVariants = {
     hidden: { opacity: 0, x: -50 },
     visible: { opacity: 1, x: 0 },
