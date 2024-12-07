@@ -1,11 +1,14 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { IconMessageFilled } from "@tabler/icons-react";
+import FloatingButton from "./FloatingButton";
 const Header = () => {
   const navigate = useNavigate();
+  
   const handleClick = () => {
     navigate("/");
   };
+  
 
   return (
     <div className="fixed top-0 left-0 w-full z-50 bg-white shadow-md border-b-8 border-green-600 dark:bg-neutral-900 dark:border-neutral-700">
@@ -72,12 +75,7 @@ const Header = () => {
 
         {/* Mobile Menu Button (Visible only on small screens and fixed at the bottom-right) */}
         <div className="md:hidden fixed bottom-4 right-4 z-50">
-          <NavLink to="/contact">
-            <button className="text-black p-3 rounded-full bg-black shadow-lg hover:bg-green-100 transition-all">
-              {/* Hamburger icon */}
-              <IconMessageFilled className="h-full w-full text-green-500 dark:text-neutral-300 " />
-            </button>
-          </NavLink>
+          <FloatingButton />
         </div>
 
         {/* Contact Button */}
