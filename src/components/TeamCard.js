@@ -1,32 +1,31 @@
 import { HoverEffect } from "../components/ui/card-hover-effect.tsx";
 import {
-    IconAutomation
-    ,
-    IconUserCode,
-    IconCertificate,
-    IconReportMoney,
-    IconContract,
-    IconDeviceImacCode,
-  } from "@tabler/icons-react";
+  IconAutomation,
+  IconUserCode,
+  IconCertificate,
+  IconReportMoney,
+  IconContract,
+  IconDeviceImacCode,
+} from "@tabler/icons-react";
 
 export function TeamCard() {
   return (
-    <div className="max-w-5xl mx-auto px-8">
-      <h1 className="text-4xl font-extrabold mb-4 text-center text-green-600">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
+      <h1 className="text-3xl sm:text-4xl font-extrabold mb-6 text-center text-green-600">
         Our Team
       </h1>
-      <div className="text-justify w-full items-center font-medium text-xl">
+      <div className="text-justify w-full items-center font-medium text-base sm:text-lg md:text-xl mb-6">
         The immense progress of our organization is due to the consistent effort
         of our team members. Our organization has a team of expert
         professionals, who are the key in delivering high-quality products and
-        services. They are continously equipped with skills contributing to
+        services. They are continuously equipped with skills contributing to
         manufacturing process, quality control, Research and Development, Supply
-        Chain Management etc. We constantly remember to keep colloboration,
+        Chain Management etc. We constantly remember to keep collaboration,
         innovation, dedication to quality and focus on customers. Our Team
         comprises:
       </div>
       <HoverEffect items={projects} />
-      <div className="text-justify w-full items-center font-medium text-xl">
+      <div className="text-justify w-full items-center font-medium text-base sm:text-lg md:text-xl mt-6">
         Moreover, we regularly conduct training sessions to ensure that our
         professionals stay up-to-date with the latest industry trends,
         technological advancements, and market shifts. These sessions are
@@ -41,47 +40,60 @@ export function TeamCard() {
     </div>
   );
 }
+
 export const projects = [
   {
     title: "Engineers",
     description:
       "Engineers are experts in their fields, creating and innovating constantly. As practitioners of engineering, engineering professionals deal with complex systems, structures, devices, and materials to fulfill functional requirements while also considering the limitations imposed by regulation, safety, cost, and more.",
     link: "https://stripe.com",
-    icons: <IconUserCode className="h-full w-full mt-6 text-white dark:text-neutral-300" />
+    icons: (
+      <IconUserCode className="h-12 w-12 sm:h-14 sm:w-14 mt-6 text-white dark:text-neutral-300" />
+    ),
   },
   {
     title: "Technocrats",
     description:
       "Technocrats are individuals with technical training and occupations who perceive many important societal problems as being solvable with the applied use of technology and related applications.",
     link: "https://netflix.com",
-    icons: <IconContract className="h-full w-full mt-6 text-white dark:text-neutral-300" />
+    icons: (
+      <IconContract className="h-12 w-12 sm:h-14 sm:w-14 mt-6 text-white dark:text-neutral-300" />
+    ),
   },
   {
     title: "Quality controllers",
     description:
-      "a quality control programme ensures that the completed products adhere to the intended quality standards and are error-free. Customers are more inclined to return and do business with the firm again when they obtain high-quality items that satisfy their expectations.",
+      "A quality control programme ensures that the completed products adhere to the intended quality standards and are error-free. Customers are more inclined to return and do business with the firm again when they obtain high-quality items that satisfy their expectations.",
     link: "https://google.com",
-    icons: <IconCertificate className="h-full w-full mt-6 text-white dark:text-neutral-300" />
+    icons: (
+      <IconCertificate className="h-12 w-12 sm:h-14 sm:w-14 mt-6 text-white dark:text-neutral-300" />
+    ),
   },
   {
     title: "R&D experts",
     description:
-      "Research and development (R&D) is the series of activities that companies undertake to innovate. R&D is often the first stage in the development process that results in market research product development, and product testing.",
+      "Research and development (R&D) is the series of activities that companies undertake to innovate. R&D is often the first stage in the development process that results in market research, product development, and product testing.",
     link: "https://meta.com",
-    icons: <IconAutomation className="h-full w-full mt-6 text-white dark:text-neutral-300" />
+    icons: (
+      <IconAutomation className="h-12 w-12 sm:h-14 sm:w-14 mt-6 text-white dark:text-neutral-300" />
+    ),
   },
   {
-    title: "Sales & Marketing ",
+    title: "Sales & Marketing",
     description:
       "Eligible Business Employees primarily engaged in sales and marketing activities for or relating to the Business of the Company Group Entities.",
     link: "https://amazon.com",
-    icons: <IconReportMoney className="h-full w-full mt-6 text-white dark:text-neutral-300" />
+    icons: (
+      <IconReportMoney className="h-12 w-12 sm:h-14 sm:w-14 mt-6 text-white dark:text-neutral-300" />
+    ),
   },
   {
     title: "Software Developers",
     description:
       "A develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
     link: "https://microsoft.com",
-    icons: <IconDeviceImacCode className="h-full w-full mt-6 text-white dark:text-neutral-300" />
+    icons: (
+      <IconDeviceImacCode className="h-12 w-12 sm:h-14 sm:w-14 mt-6 text-white dark:text-neutral-300" />
+    ),
   },
 ];

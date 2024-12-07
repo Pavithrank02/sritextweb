@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-
+import { IconMessageFilled } from "@tabler/icons-react";
 const Header = () => {
   const navigate = useNavigate();
   const handleClick = () => {
@@ -8,15 +8,18 @@ const Header = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50 bg-white shadow-md border-b-8  border-green-600 dark:bg-neutral-900 dark:border-neutral-700">
+    <div className="fixed top-0 left-0 w-full z-50 bg-white shadow-md border-b-8 border-green-600 dark:bg-neutral-900 dark:border-neutral-700">
       <div className="flex justify-between items-center h-20 px-4 md:px-10">
+        {/* Logo Section */}
         <div
           className="cursor-pointer text-2xl font-bold text-green-500"
           onClick={handleClick}
         >
           Sritex
         </div>
-        <div className="flex justify-around font-bold text-xs sm:text-sm md:text-lg lg:text-lg w-full md:w-2/3">
+
+        {/* Navigation Links */}
+        <div className="flex flex-row md:flex justify-around font-bold text-sm sm:text-sm md:text-lg lg:text-lg w-full md:w-2/3">
           <div className="p-2">
             <NavLink
               to="/"
@@ -66,11 +69,21 @@ const Header = () => {
             </NavLink>
           </div>
         </div>
+
+        {/* Mobile Menu Button (Visible only on small screens and fixed at the bottom-right) */}
+        <div className="md:hidden fixed bottom-4 right-4 z-50">
+          <NavLink to="/contact">
+            <button className="text-black p-3 rounded-full bg-black shadow-lg hover:bg-green-100 transition-all">
+              {/* Hamburger icon */}
+              <IconMessageFilled className="h-full w-full text-green-500 dark:text-neutral-300 " />
+            </button>
+          </NavLink>
+        </div>
+
+        {/* Contact Button */}
         <div>
-          <NavLink
-           to="/contact"
-           >
-            <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-lg font-medium transition duration-300 ease-in-out hover:bg-green-500 hover:scale-110">
+          <NavLink to="/contact">
+            <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-lg font-medium transition duration-300 ease-in-out hover:bg-green-500 hover:scale-110 hidden md:block">
               Contact now
             </button>
           </NavLink>
