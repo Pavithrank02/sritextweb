@@ -19,7 +19,7 @@
 			- Why Us
 			- Testimony
     - Gallery
-			- product images display
+			- product images display collapsable
     - Product
     - Contact
 			- Contact form
