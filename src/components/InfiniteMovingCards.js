@@ -12,14 +12,14 @@ export function InfiniteMovingCards({ items, direction, speed }) {
         {[...items, ...items].map((item, index) => (
           <motion.div
             key={index}
-            className="flex-none w-[300px] p-6 bg-white border border-x-4 border-green-600 rounded-xl shadow-md dark:bg-green-800 dark:text-white"
+            className="flex-none w-[300px] p-6 bg-white border border-x-4 border-green-700 rounded-xl shadow-md dark:bg-green-800 dark:text-white"
             initial={{ opacity: 0, x: direction === "right" ? 100 : -100 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: direction === "right" ? -100 : 100 }}
             transition={{ duration: 1.5, ease: "easeOut", delay: index * 0.3 }}
           >
             <p className="text-lg font-semibold">{item.quote}</p>
-            <p className="mt-4 text-sm text-green-600 dark:text-gray-400">– {item.name}, <span className="italic">{item.title}</span></p>
+            <p className="mt-4 text-sm text-green-700 dark:text-gray-400">– {item.name}, <span className="italic">{item.title}</span></p>
           </motion.div>
         ))}
       </div>

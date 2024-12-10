@@ -24,7 +24,7 @@ const FactTable = () => {
 
   return (
     <div className="flex flex-col justify-between items-center min-h-full bg-gray-100 p-4">
-      <h1 className='text-2xl font-extrabold mb-4 text-center text-green-600'>Fact Sheet</h1>
+      <h1 className='text-4xl font-extrabold mb-4 text-center text-green-700'>Fact Sheet</h1>
       <motion.div
         initial="hidden"
         animate="visible"

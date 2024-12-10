@@ -30,7 +30,7 @@ export function ProductDisplay() {
 }
 const Skeleton = () => (
   <div
-    className="flex flex-1 w-full h-full min-h-[6rem]  bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"><img className="w-full rounded-xl" src="https://5.imimg.com/data5/BY/RO/MY-2995798/automatic-cotton-baling-press-250x250.jpg" /></div>
+    className="flex flex-1 w-full h-full min-h-[6rem]  bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"><img className="w-full rounded-xl" src="https://images.squarespace-cdn.com/content/v1/54ff7cd3e4b0bc757625e06d/1484265999119-XUVJZYMD4V6TETXW97OT/Manufacturing+Plant" /></div>
 );
 const items = [
   {

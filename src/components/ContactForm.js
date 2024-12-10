@@ -74,7 +74,7 @@ const ContactForm = () => {
         <div className="max-w-lg w-full p-6 shadow-lg rounded-lg border flex flex-col items-start lg:w-1/2">
           <div className="flex flex-col justify-around mb-6">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 animate__animated animate__fadeIn">
-              Contact <span className="text-green-600">Us</span>
+              Contact <span className="text-green-700">Us</span>
             </h2>
             <p className="text-sm sm:text-base mb-5">
               If you have any questions, concerns, or feedback, please feel free to reach out to us using the form.
@@ -84,7 +84,7 @@ const ContactForm = () => {
           <form onSubmit={handleSubmit} className="space-y-4 w-full">
             {/* Name Field */}
             <div className="form-group w-full">
-              <label htmlFor="name" className="block text-sm font-bold text-green-600">
+              <label htmlFor="name" className="block text-sm font-bold text-green-700">
                 Contact Name
               </label>
               <input
@@ -94,7 +94,7 @@ const ContactForm = () => {
                 value={formData.name}
                 placeholder="Enter your name"
                 onChange={handleInputChange}
-                className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-700"
                 required
               />
               {errors.name && <small className="text-red-500 text-xs">{errors.name}</small>}
@@ -112,7 +112,7 @@ const ContactForm = () => {
                 value={formData.email}
                 placeholder="Enter your email id"
                 onChange={handleInputChange}
-                className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-700"
                 required
               />
               {errors.email && <small className="text-red-500 text-xs">{errors.email}</small>}
@@ -130,13 +130,13 @@ const ContactForm = () => {
                 value={formData.city}
                 placeholder="Enter your city name"
                 onChange={handleInputChange}
-                className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-700"
               />
             </div>
 
             {/* Message Field */}
             <div className="form-group w-full">
-              <label htmlFor="message" className="block text-sm font-bold text-green-600">
+              <label htmlFor="message" className="block text-sm font-bold text-green-700">
                 Let's Talk About Your Idea
               </label>
               <textarea
@@ -145,7 +145,7 @@ const ContactForm = () => {
                 value={formData.message}
                 placeholder="Enter your message..."
                 onChange={handleInputChange}
-                className="mt-2 p-3 w-full h-32 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="mt-2 p-3 w-full h-32 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-700"
                 required
               />
               {errors.message && <small className="text-red-500 text-xs">{errors.message}</small>}
@@ -155,7 +155,7 @@ const ContactForm = () => {
             <div>
               <button
                 type="submit"
-                className="w-full font-bold text-xl bg-green-600 text-white py-3 rounded-md hover:bg-green-600 transition duration-300 ease-in-out transform hover:scale-105"
+                className="w-full font-bold text-xl bg-green-700 text-white py-3 rounded-md hover:bg-green-700 transition duration-300 ease-in-out transform hover:scale-105"
               >
                 {formStatus ? formStatus : "Submit"}
               </button>
@@ -164,14 +164,14 @@ const ContactForm = () => {
             {/* Contact Information */}
             <div className="flex flex-col sm:flex-row justify-between mt-6 w-full">
               <div className="flex flex-row justify-start items-center mb-4 sm:mb-0">
-                <IconPhoneCall className="h-8 w-8 text-green-500" />
+                <IconPhoneCall className="h-8 w-8 text-green-700" />
                 <div className="ml-3">
                   <div className="font-bold">Phone</div>
                   <div className="text-lime-800">91 9095726699</div>
                 </div>
               </div>
               <div className="flex flex-row justify-start items-center">
-                <IconMailFilled className="h-8 w-8 text-green-500" />
+                <IconMailFilled className="h-8 w-8 text-green-700" />
                 <div className="ml-3">
                   <div className="font-bold">Email</div>
                   <div className="text-lime-800">sritex06@gmail.com</div>
@@ -182,12 +182,12 @@ const ContactForm = () => {
 
           {/* Display status message */}
           {formStatus && (
-            <p className="mt-4 text-center text-green-500 font-semibold">{formStatus}</p>
+            <p className="mt-4 text-center text-green-700 font-semibold">{formStatus}</p>
           )}
         </div>
 
         {/* Google Maps Section */}
-        <div className="lg:w-1/2 w-full flex justify-center items-center bg-emerald-400 rounded-r-xl p-4">
+        <div className="lg:w-1/2 w-full flex justify-center items-center bg-emerald-700 rounded-r-xl p-4">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3915.325664182678!2d77.14355007587106!3d11.089088253347125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zM13CsDA1JzIwLjciTiA3N8KwMDgnNDYuMSJF!5e0!3m2!1sen!2sin!4v1733302851096!5m2!1sen!2sin"
             width="100%"

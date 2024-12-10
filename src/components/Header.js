@@ -15,10 +15,13 @@ const Header = () => {
       <div className="flex justify-between items-center h-20 px-4 md:px-10">
         {/* Logo Section */}
         <div
-          className="cursor-pointer text-2xl font-bold text-green-500"
+          className="cursor-pointer  text-green-700"
           onClick={handleClick}
         >
-          Sritex
+          <img src="https://static.wixstatic.com/media/446146_88d46b199dae40d8b992490cb9aedf28.jpg/v1/fill/w_378,h_190,al_c,lg_1,q_80,enc_auto/446146_88d46b199dae40d8b992490cb9aedf28.jpg" 
+          alt="logo" 
+          className="h-16"/>
+
         </div>
 
         {/* Navigation Links */}
@@ -28,7 +31,7 @@ const Header = () => {
               to="/"
               className={({ isActive }) =>
                 isActive
-                  ? "text-green-500 border-b-2 border-green-700"
+                  ? "text-green-600 border-b-2 border-green-700"
                   : "hover:text-green-500 transition duration-300 ease-in-out transform hover:scale-110"
               }
             >
@@ -40,7 +43,7 @@ const Header = () => {
               to="/about"
               className={({ isActive }) =>
                 isActive
-                  ? "text-green-500 border-b-2 border-green-700"
+                  ? "text-green-700 border-b-2 border-green-700"
                   : "hover:text-green-500 transition duration-300 ease-in-out transform hover:scale-110"
               }
             >
@@ -52,7 +55,7 @@ const Header = () => {
               to="/product"
               className={({ isActive }) =>
                 isActive
-                  ? "text-green-500 border-b-2 border-green-700"
+                  ? "text-green-700 border-b-2 border-green-700"
                   : "hover:text-green-500 transition duration-300 ease-in-out transform hover:scale-110"
               }
             >
@@ -64,7 +67,7 @@ const Header = () => {
               to="/gallery"
               className={({ isActive }) =>
                 isActive
-                  ? "text-green-500 border-b-2 border-green-700"
+                  ? "text-green-700 border-b-2 border-green-700"
                   : "hover:text-green-500 transition duration-300 ease-in-out transform hover:scale-110"
               }
             >
@@ -81,7 +84,7 @@ const Header = () => {
         {/* Contact Button */}
         <div>
           <NavLink to="/contact">
-            <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-lg font-medium transition duration-300 ease-in-out hover:bg-green-500 hover:scale-110 hidden md:block">
+            <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-lg font-medium transition duration-300 ease-in-out hover:bg-green-700 hover:scale-110 hidden md:block">
               Contact now
             </button>
           </NavLink>

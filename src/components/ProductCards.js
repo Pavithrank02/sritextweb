@@ -4,7 +4,7 @@ export function ProductCards() {
   const cards = [
     {
       title: "Forest Adventure",
-      src: "https://5.imimg.com/data5/SELLER/Default/2023/6/313513084/JF/FX/TT/2995798/high-pressure-air-blower-500x500.jpeg",
+      src: "https://images.squarespace-cdn.com/content/v1/54ff7cd3e4b0bc757625e06d/1484265999119-XUVJZYMD4V6TETXW97OT/Manufacturing+Plant",
     },
     {
       title: "Valley of life",

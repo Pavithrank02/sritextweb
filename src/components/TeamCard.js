@@ -11,7 +11,7 @@ import {
 export function TeamCard() {
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
-      <h1 className="text-3xl sm:text-4xl font-extrabold mb-6 text-center text-green-600">
+      <h1 className="text-3xl sm:text-4xl font-extrabold mb-6 text-center text-green-700">
         Our Team
       </h1>
       <div className="text-justify w-full items-center font-medium text-base sm:text-lg md:text-xl mb-6">
