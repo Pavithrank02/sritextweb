@@ -30,4 +30,4 @@
 	- home page with headers, product overview and image sliders. 
 	- about page with necessary company details
 	- contact us page with contact form and embeded google map.
-    
+    - Product Gallery UI added

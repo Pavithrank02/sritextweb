@@ -1,8 +1,63 @@
 "use client";
+import { IconMinus, IconPlus } from "@tabler/icons-react";
 import { ParallaxScroll } from "../components/ui/parallax-scroll.tsx";
+import { useState } from "react";
 
 export function GalleryShow() {
-  return <ParallaxScroll images={images} />;
+  const products = [
+    "Cotton Baling Press Machine",
+    "Briquetting Machine",
+    "Air Blower",
+    "Belt Conveyor System",
+    "Ginning Automation Systems",
+    "Kappas Pre Cleaning Machine",
+    "Lint Super Cleaning Machine",
+    "Screw Conveyor",
+    "Bucket Elevator System"
+  ];
+
+  // State to manage the expanded state for each product
+  const [expandStates, setExpandStates] = useState(
+    products.reduce((acc, product, index) => {
+      acc[index] = false; // Initially all are collapsed
+      return acc;
+    }, {})
+  );
+
+  // Function to toggle the expand state of a specific product
+  const handleExpand = (index) => {
+    setExpandStates(prevState => ({
+      ...prevState,
+      [index]: !prevState[index], // Toggle the expand state for the clicked product
+    }));
+  };
+
+  return (
+    <>
+      {products.map((product, index) => (
+        <div className="w-full flex flex-col justify-center items-center bg-white" key={index}>
+          {/* The div with the border and content */}
+          <div className="h-20 w-10/12 border-neutral-900 border-4 mt-28 flex flex-row justify-between items-center z-10">
+            <div className="text-lg font-extrabold">
+              {product}
+            </div>
+            <div className="bg-slate-200 cursor-pointer" onClick={() => handleExpand(index)}>
+              {expandStates[index] ? (
+                <IconMinus className="h-10/12 w-full text-green-700 font-extrabold dark:text-neutral-300" />
+              ) : (
+                <IconPlus className="h-10/12 w-full text-green-700 font-extrabold dark:text-neutral-300" />
+              )}
+            </div>
+          </div>
+  
+        {/* Add margin-top to create space below the border */}
+        <div className=" w-10/12 h-full border-2 border-s-4">
+          {expandStates[index] &&<ParallaxScroll images={images} />}
+          </div>
+        </div>
+      ))}
+    </>
+  );
 }
 
 const images = [
