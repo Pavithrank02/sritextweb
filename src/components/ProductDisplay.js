@@ -10,12 +10,9 @@ import {
   IconTableColumn,
 } from "@tabler/icons-react";
 
-
-
-
 export function ProductDisplay() {
   return (
-    (<BentoGrid className="max-w-6xl mx-auto mt-20">
+    <BentoGrid className="max-w-6xl mx-auto mt-20">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
@@ -23,14 +20,19 @@ export function ProductDisplay() {
           description={item.description}
           header={item.header}
           icon={item.icon}
-          className={i === 3 || i === 6 ? "md:col-span-2" : ""} />
+          className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+        />
       ))}
-    </BentoGrid>)
+    </BentoGrid>
   );
 }
 const Skeleton = () => (
-  <div
-    className="flex flex-1 w-full h-full min-h-[6rem]  bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"><img className="w-full rounded-xl" src="https://images.squarespace-cdn.com/content/v1/54ff7cd3e4b0bc757625e06d/1484265999119-XUVJZYMD4V6TETXW97OT/Manufacturing+Plant" /></div>
+  <div className="flex flex-1 w-full h-full min-h-[6rem]  bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100">
+    {/* <img
+      className="w-full rounded-xl"
+      src="https://images.squarespace-cdn.com/content/v1/54ff7cd3e4b0bc757625e06d/1484265999119-XUVJZYMD4V6TETXW97OT/Manufacturing+Plant"
+    /> */}
+  </div>
 );
 const items = [
   {
