@@ -1,60 +1,64 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const Modal = ({ isOpen, onClose }) => {
+const Modals = ({ isOpen, onClose, card }) => {
+    console.log(card)
   return (
-    <div>
-      {/* Modal Background */}
+    <div
+      className={`fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center transition-opacity ${
+        isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+      }`}
+      onClick={onClose}
+    >
       <div
-        className={`abolute inset-0 bg-gray-800 bg-opacity-50 transition-opacity ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
-        onClick={onClose}
-      />
-      
-      {/* Modal Content */}
-      <div
-        className={`fixed inset-0 flex items-center justify-center transition-transform transform ${isOpen ? 'scale-100' : 'scale-90 opacity-0'} bg-transparent transition-all duration-300`}
+        className={`bg-white mt-8 rounded-lg max-w-4xl w-full p-6 md:p-8 transition-transform transform scrollbar-hide ${
+          isOpen ? "scale-100" : "scale-90 opacity-0"
+        } max-h-[80vh] sm:max-h-[85vh] lg:max-h-[90vh] overflow-auto`} 
+        onClick={(e) => e.stopPropagation()} 
       >
-        <div className="bg-white rounded-lg p-6 max-w-sm w-full shadow-lg">
-          <h2 className="text-2xl font-semibold text-center mb-4">Modal Title</h2>
-          <p className="text-center text-gray-600 mb-6">
-            This is a modal with a smooth entrance and exit animation.
-          </p>
-          <div className="flex justify-center space-x-4">
-            <button
-              onClick={onClose}
-              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
-            >
-              Close
-            </button>
-          </div>
+        <h2 className="text-3xl font-semibold mb-6 text-gray-800">{card.title}</h2>
+        <img
+          src={card.src}
+          alt={card.title}
+          className="mb-6 w-full h-60 sm:h-80 lg:h-96 object-cover rounded-lg shadow-lg"
+        />
+        <p className="text-lg text-gray-700 mb-6">{card.description}</p>
+
+        {/* Table displaying product details */}
+        <table className="min-w-full table-auto mb-6 border-collapse rounded-lg overflow-hidden">
+          <thead>
+            <tr className="bg-gradient-to-r from-indigo-600 to-blue-500 text-white">
+              <th className="px-6 py-3 text-left text-lg font-medium">Attribute</th>
+              <th className="px-6 py-3 text-left text-lg font-medium">Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            {card.details && card.details.map(( detail, index) => (
+                console.log(detail),
+              <tr
+                key={index}
+                className={`${
+                  index % 2 === 0 ? "bg-gray-50" : "bg-gray-100"
+                } hover:bg-blue-50 transition-all duration-300`}
+              >
+                <td className="px-6 py-4 text-lg font-medium text-gray-800">{detail[0]}</td>
+                <td className="px-6 py-4 text-lg text-gray-600">{detail[1]}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        <div className="mt-4 flex justify-end">
+          <button
+            onClick={onClose}
+            className="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition"
+          >
+            Close
+          </button>
         </div>
       </div>
     </div>
   );
 };
 
-const Modals = () => {
-  const [isModalOpen, setModalOpen] = useState(false);
-
-  const openModal = () => {
-    setModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalOpen(false);
-  };
-
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 z-50">
-      <button
-        onClick={openModal}
-        className="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600 transition"
-      >
-        Open Modal
-      </button>
-      
-      <Modal isOpen={isModalOpen} onClose={closeModal} />
-    </div>
-  );
-};
-
 export default Modals;
+
