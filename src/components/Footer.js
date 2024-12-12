@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { IconPhone, IconMapPin, IconMailFilled } from "@tabler/icons-react";
 import { FloatingDockDemo } from './FooterIcons';
-// import img from '../images/img1.JPG';
+import img from '../assets/images/sritex.png';
 
 const Footer = () => {
   const date = new Date().getFullYear()
@@ -11,9 +11,9 @@ const Footer = () => {
       {/* Upper section with company info and contact */}
       <div className="flex flex-col md:flex-row justify-between w-11/12 lg:w-9/12 border-b-4 border-x-lime-700 pb-4">
         {/* Company Info Section */}
-        <div className="flex flex-col items-start justify-center text-justify mb-6 md:mb-0 md:w-1/2">
+        <div className="flex flex-col items-center sm:items-start justify-center text-justify mb-6 md:mb-0 md:w-1/2">
           <div className="flex items-center justify-center mb-4">
-            {/* <img src={img} className="h-16 md:h-24" alt="Logo" /> */}
+            <img src={img} className="h-16 md:h-24" alt="Logo" />
           </div>
           <div className="text-white text-sm md:text-lg font-light w-full md:w-11/12">
           Sritex Hi Tech Machines prominent manufacturers and traders of a wide range of Air Blower, Hydraulic Press Machine, Baling Press, Belt Conveyor, Bucket Elevator Belt and Conveyor Belt. We are a partnership based venture. Our range is easy to operate and consume less amount of power. These products are offered to the clients in different sizes and specifications.

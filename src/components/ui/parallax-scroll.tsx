@@ -31,13 +31,13 @@ export const ParallaxScroll = ({
 
   return (
     <div
-      className={cn("h-[60rem] scrollbar-hide items-start overflow-y-auto w-full -mt-10", className)}
+      className={cn("h-[60rem] scrollbar-hide items-start overflow-y-auto w-full ", className)}
       ref={gridRef}>
       <div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-start max-w-5xl mx-auto gap-10 py-40 px-10">
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-start max-w-5xl mx-auto gap-10 py-40 px-10 -mt-32">
         
         {/* First Row */}
-        <div className="grid gap-10">
+        <div className="grid gap-10 -mt-320">
           {firstPart.map((el, idx) => (
             <motion.div
               style={{ y: translateFirst }}

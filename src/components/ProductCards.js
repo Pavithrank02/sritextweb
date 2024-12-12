@@ -28,5 +28,5 @@ export function ProductCards() {
     },
   ];
 
-  return <FocusCards cards={cards} size={4} width={"11/12"}/>;
+  return <FocusCards cards={cards} size={3} width={"full"}/>;
 }

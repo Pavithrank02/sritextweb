@@ -33,11 +33,11 @@ export function GalleryShow() {
   };
 
   return (
-    <div className="mt-28">
-      <img src="https://drive.google.com/uc?export=view&id=1as7YTqEgOA5dMOusQdBtUbEnlENlep38" alt="Product Image" />
+    <div className="mt-28 ">
+      {/* <img src="https://drive.google.com/uc?export=view&id=1as7YTqEgOA5dMOusQdBtUbEnlENlep38" alt="Product Image" /> */}
       {products.map((product, index) => (
         <div 
-        className="w-full flex flex-col justify-center items-center bg-white mb-4 " 
+        className="w-full flex flex-col justify-center items-center mb-5" 
         key={index}
         onClick={() => handleExpand(index)}>
           {/* The div with the border and content */}
@@ -55,7 +55,7 @@ export function GalleryShow() {
           </div>
   
           {/* Add margin-top to create space below the border */}
-          <div className="w-10/12 h-full border-2 border-s-4">
+          <div className="w-10/12 h-full border-2 border-s-4 ">
             {expandStates[index] && <ParallaxScroll images={images} />}
           </div>
         </div>
@@ -66,8 +66,8 @@ export function GalleryShow() {
 
 
 const images = [
-  "https://drive.google.com/download?id=1as7YTqEgOA5dMOusQdBtUbEnlENlep38&export=view",
-  "https://drive.google.com/file/d/1as7YTqEgOA5dMOusQdBtUbEnlENlep38/view?usp=drive_link",
+  "https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80",
+  "https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80",
   "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
   "https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80",
   "https://images.unsplash.com/photo-1505144808419-1957a94ca61e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3070&q=80",
