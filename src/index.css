@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-slider {
+    display: flex;
+    animation: slide infinite;
+    width: max-content;
+  }
+  
+  .animate-none {
+    animation: none;
+  }
+  .product-slider {
+    transition: transform 0.5s ease;
+  }
