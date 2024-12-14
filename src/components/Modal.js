@@ -33,8 +33,7 @@ const Modals = ({ isOpen, onClose, card }) => {
           </thead>
           <tbody>
             {card.details && card.details.map(( detail, index) => (
-                console.log(detail),
-              <tr
+               <tr
                 key={index}
                 className={`${
                   index % 2 === 0 ? "bg-gray-50" : "bg-gray-100"

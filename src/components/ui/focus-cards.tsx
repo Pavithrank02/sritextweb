@@ -38,6 +38,7 @@ export const Card = React.memo(
 Card.displayName = "Card";
 
 export function FocusCards({ cards, size, width }) {
+  console.log('cards', cards)
   const [hovered, setHovered] = useState(null);
   const [selectedCard, setSelectedCard] = useState(null);
 
@@ -56,14 +57,11 @@ export function FocusCards({ cards, size, width }) {
     <div className="mt-28 mb-5 w-full px-4 py-6 border-4 border-neutral-300 rounded-xl shadow-xl flex flex-col justify-center items-center">
       <div className="w-full">
         <p className="text-4xl font-extrabold mb-5 text-green-600 items-center">
-          Product Listing
+        {cards && cards[0] && cards[0].List}
         </p>
       </div>
 
-      <div className="text-green-700 font-semibold text-2xl">
-        <p>{cards && cards[0] && cards[0].List}</p>
-      </div>
-
+     
       {/* Grid for the cards */}
       <div
         className={`grid grid-cols-1 sm:grid-cols-${size} md:grid-cols-${size} gap-10 w-${width} cursor-pointer`}
