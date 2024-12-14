@@ -8,14 +8,14 @@ export function FlipWordsDemo() {
   return (
     <div className="h-auto sm:h-[30rem] flex flex-col justify-center items-center sm:items-start mt-24 sm:mt-14 px-6 sm:px-8 lg:ml-40 space-y-8">
       {/* First Text Block */}
-      <div className="text-3xl sm:text-4xl md:text-5xl font-semibold text-neutral-600 dark:text-neutral-400 text-center sm:text-left">
+      <div className="text-3xl sm:text-4xl md:text-5xl font-semibold text-black  text-center sm:text-left">
         Build
         <FlipWords className="text-green-700" words={words} /> <br />
         machineries with Sritex Hi-Tech Machines
       </div>
 
       {/* Second Text Block */}
-      <div className="text-lg sm:text-xl md:text-2xl text-left text-neutral-600 font-bold dark:text-neutral-400">
+      <div className="text-lg sm:text-xl md:text-2xl text-left font-bold ">
         We specialize in bending, welding, and finishing to meet your exact
         <br />
         specifications with durability and precision.
