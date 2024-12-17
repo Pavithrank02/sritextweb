@@ -21,6 +21,7 @@
     - Gallery
 			- product images display collapsable
     - Product
+			- Product cards for each product.
     - Contact
 			- Contact form
 			- Google map
@@ -31,3 +32,5 @@
 	- about page with necessary company details
 	- contact us page with contact form and embeded google map.
     - Product Gallery UI added
+	- product overview on home page is completed.
+	- product cards is completed
