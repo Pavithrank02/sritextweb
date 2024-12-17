@@ -1,6 +1,6 @@
 import React from "react";
-import { FlipWords } from "../components/ui/flip-words.tsx";
 import { NavLink } from "react-router-dom";
+import { FlipWords } from "../components/ui/flip-words.tsx";
 
 export function FlipWordsDemo() {
   const words = ["Better", "Smarter", "Harder", "Modern"];

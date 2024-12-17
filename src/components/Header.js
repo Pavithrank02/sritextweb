@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import { IconMessageFilled } from "@tabler/icons-react";
 import FloatingButton from "./FloatingButton";
 const Header = () => {
   const navigate = useNavigate();

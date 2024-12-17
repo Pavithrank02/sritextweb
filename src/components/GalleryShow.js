@@ -1,7 +1,7 @@
 "use client";
+import { useState } from "react";
 import { IconMinus, IconPlus } from "@tabler/icons-react";
 import { ParallaxScroll } from "../components/ui/parallax-scroll.tsx";
-import { useState } from "react";
 
 export function GalleryShow() {
   const products = [
