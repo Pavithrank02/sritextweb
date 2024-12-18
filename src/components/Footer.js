@@ -13,7 +13,7 @@ const Footer = () => {
         {/* Company Info Section */}
         <div className="flex flex-col items-center sm:items-start justify-center text-justify mb-6 md:mb-0 md:w-1/2">
           <div className="flex items-center justify-center mb-4">
-            <img src={img} className="h-16 md:h-24" alt="Logo" />
+            <img src={img} className="h-16 md:h-32 md:w-40" alt="Logo" />
           </div>
           <div className="text-white text-sm md:text-lg font-light w-full md:w-11/12">
           Sritex Hi Tech Machines prominent manufacturers and traders of a wide range of Air Blower, Hydraulic Press Machine, Baling Press, Belt Conveyor, Bucket Elevator Belt and Conveyor Belt. We are a partnership based venture. Our range is easy to operate and consume less amount of power. These products are offered to the clients in different sizes and specifications.
@@ -45,8 +45,8 @@ const Footer = () => {
           <div className="mb-6">
             <p className="text-white font-bold text-sm md:text-lg mb-2">Open Hours:</p>
             <p className="text-white font-light text-sm md:text-base">
-              Monday-Friday: 7:00AM – 5:00PM<br />
-              Sat-Sun: CLOSED
+              Monday-Saturday: 9:00AM – 6:00PM<br />
+              Sun: CLOSED
             </p>
           </div>
           {/* <MapButton /> */}
