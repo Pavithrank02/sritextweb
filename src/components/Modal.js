@@ -4,7 +4,7 @@ const Modals = ({ isOpen, onClose, card }) => {
     console.log(card)
   return (
     <div
-      className={`fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center transition-opacity ${
+      className={`fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center transition-opacity z-50 ${
         isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
       onClick={onClose}
