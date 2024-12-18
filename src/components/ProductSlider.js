@@ -17,6 +17,8 @@ const ProductSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const productsToShow = 5; // Number of products to show at once
 
+  const [startTouch, setStartTouch] = useState(0); // Store the starting touch position
+
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % products.length);
   };
@@ -28,6 +30,29 @@ const ProductSlider = () => {
   // Calculate the translateX value to show products correctly
   const translateX = (currentIndex * (100 / productsToShow)) + '%';
 
+  // Handle touch start event
+  const handleTouchStart = (e) => {
+    const touchStart = e.touches[0].clientX; // Get the initial touch position
+    setStartTouch(touchStart);
+  };
+
+  // Handle touch move event
+  const handleTouchMove = (e) => {
+    e.preventDefault(); // Prevent scrolling while swiping
+  };
+
+  // Handle touch end event
+  const handleTouchEnd = (e) => {
+    const touchEnd = e.changedTouches[0].clientX; // Get the final touch position
+    const swipeDistance = startTouch - touchEnd;
+
+    if (swipeDistance > 50) {
+      nextSlide(); // Swipe left
+    } else if (swipeDistance < -50) {
+      prevSlide(); // Swipe right
+    }
+  };
+
   return (
     <div className="relative w-full h-4/6 overflow-hidden mt-5 mb-5">
       {/* Title */}
@@ -35,7 +60,11 @@ const ProductSlider = () => {
         Product Overview
       </h1>
 
-      <div className="relative">
+      <div className="relative"
+        onTouchStart={handleTouchStart} // Handle touch start
+        onTouchMove={handleTouchMove}   // Handle touch move (to prevent scrolling)
+        onTouchEnd={handleTouchEnd}     // Handle touch end
+      >
         <div className="flex transition-transform duration-300 ease-in-out"
           style={{
             transform: `translateX(-${translateX})`, // Apply translateX to move slider
@@ -44,7 +73,7 @@ const ProductSlider = () => {
         >
           {/* Render Product Cards */}
           {products.map((product) => (
-            <div key={product.id} className="w-full md:w-full  px-4">
+            <div key={product.id} className="w-full md:w-full px-4">
               <ProductOverview product={product} />
             </div>
           ))}
