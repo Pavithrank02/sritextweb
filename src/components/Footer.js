@@ -20,7 +20,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Contact and Info Section */}
+        {/* Contact and Info Sections */}
         <div className="flex flex-col justify-between items-start md:items-start md:w-1/2">
           <div className="text-white font-bold text-lg md:text-2xl mb-4 md:mb-0">
             Official info:
