@@ -12,7 +12,7 @@ export const Card = React.memo(
       onMouseLeave={() => setHovered(null)}
       onClick={() => onCardClick(card)} // Trigger modal on card click
       className={cn(
-        "rounded-lg relative bg-gray-100 dark:bg-neutral-900 overflow-hidden h-60 md:h-96 w-full transition-all duration-300 ease-out",
+        "rounded-lg relative bg-gray-100 dark:bg-neutral-600 overflow-hidden h-60 md:h-96 w-full transition-all duration-300 ease-out",
         hovered !== null && hovered !== index && "blur-sm scale-[0.98]"
       )}
     >
@@ -38,7 +38,7 @@ export const Card = React.memo(
 Card.displayName = "Card";
 
 export function FocusCards({ cards, size, width }) {
-  console.log('cards', cards)
+  console.log("cards", cards);
   const [hovered, setHovered] = useState(null);
   const [selectedCard, setSelectedCard] = useState(null);
 
@@ -51,40 +51,45 @@ export function FocusCards({ cards, size, width }) {
   };
 
   // Safely access the products data: Make sure `cards` and `cards[0].products` exist
-  const products = cards && cards[0] && Array.isArray(cards[0].products) ? cards[0].products : [];
+  const products =
+    cards && cards[0] && Array.isArray(cards[0].products)
+      ? cards[0].products
+      : [];
 
   return (
-    <div className="mt-28 mb-5 w-full px-4 py-6 border-4 border-neutral-300 rounded-xl shadow-xl flex flex-col justify-center items-center">
-      <div className="w-full">
-        <p className="text-4xl font-extrabold mb-5 text-green-600 items-center">
-        {cards && cards[0] && cards[0].List}
-        </p>
-      </div>
+    <div className="md:flex md:justify-center ">
+      <div className="mt-28 mb-5 md:w-10/12 px-4 py-6 border-4 border-neutral-300 rounded-xl shadow-xl flex flex-col justify-center items-center">
+        <div className="w-full">
+          <p className="text-4xl font-extrabold mb-5 text-green-600 items-center">
+            {cards && cards[0] && cards[0].List}
+          </p>
+        </div>
 
-     
-      {/* Grid for the cards */}
-      <div
-        className={`grid grid-cols-1 sm:grid-cols-${size} md:grid-cols-${size} gap-10 w-${width} cursor-pointer`}
-      >
-        {products.length > 0 ? (
-          products.map((card, index) => (
-            <div className="flex flex-col justify-between" key={card.title}>
-              <Card
-                card={card}
-                index={index}
-                hovered={hovered}
-                setHovered={setHovered}
-                onCardClick={handleCardClick}
-              />
-            </div>
-          ))
-        ) : null} {/* Don't display anything if no products are available */}
-      </div>
+        {/* Grid for the cards */}
+        <div
+          className={`grid grid-cols-1 sm:grid-cols-${size} md:grid-cols-${size} gap-10 w-${width} cursor-pointer`}
+        >
+          {products.length > 0
+            ? products.map((card, index) => (
+                <div className="flex flex-col justify-between" key={card.title}>
+                  <Card
+                    card={card}
+                    index={index}
+                    hovered={hovered}
+                    setHovered={setHovered}
+                    onCardClick={handleCardClick}
+                  />
+                </div>
+              ))
+            : null}{" "}
+          {/* Don't display anything if no products are available */}
+        </div>
 
-      {/* Modal to show card details */}
-      {selectedCard && (
-        <Modals isOpen={true} onClose={closeModal} card={selectedCard} />
-      )}
+        {/* Modal to show card details */}
+        {selectedCard && (
+          <Modals isOpen={true} onClose={closeModal} card={selectedCard} />
+        )}
+      </div>
     </div>
   );
 }

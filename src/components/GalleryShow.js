@@ -33,19 +33,19 @@ export function GalleryShow() {
   };
 
   return (
-    <div className="mt-28 ">
-      {/* <img src="https://drive.google.com/uc?export=view&id=1as7YTqEgOA5dMOusQdBtUbEnlENlep38" alt="Product Image" /> */}
+    <div className="mt-28">
       {products.map((product, index) => (
-        <div 
-        className="w-full flex flex-col justify-center items-center mb-5" 
-        key={index}
-        onClick={() => handleExpand(index)}>
+        <div
+          className="w-12/12 flex flex-col justify-center items-center mb-5 "
+          key={index}
+          onClick={() => handleExpand(index)}
+        >
           {/* The div with the border and content */}
-          <div className="h-16 w-10/12 border-4 border-green-700 flex flex-row justify-between items-center ">
-            <div className="text-lg font-extrabold  cursor-pointer w-1/2 ml-3">
+          <div className="w-10/12 h-16 border-4 border-green-700 flex flex-row justify-between items-center rounded-md p-3">
+            <div className="text-lg font-extrabold cursor-pointer w-full sm:w-2/3 md:w-1/2 ml-3 truncate">
               {product}
             </div>
-            <div className="bg-slate-200 cursor-pointer p-2 mr-3" >
+            <div className="bg-slate-200 cursor-pointer p-2 mr-3">
               {expandStates[index] ? (
                 <IconMinus className="h-6 w-6 text-green-700 font-extrabold dark:text-neutral-300" />
               ) : (
@@ -53,9 +53,9 @@ export function GalleryShow() {
               )}
             </div>
           </div>
-  
+
           {/* Add margin-top to create space below the border */}
-          <div className="w-10/12 h-full border-2 border-s-4 ">
+          <div className="w-full max-w-4xl h-full border-2 border-s-4 mt-3">
             {expandStates[index] && <ParallaxScroll images={images} />}
           </div>
         </div>
@@ -63,7 +63,6 @@ export function GalleryShow() {
     </div>
   );
 }
-
 
 const images = [
   "https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80",
