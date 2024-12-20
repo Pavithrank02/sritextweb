@@ -55,7 +55,7 @@ export function GalleryShow() {
           </div>
 
           {/* Add margin-top to create space below the border */}
-          <div className="w-full max-w-4xl h-full border-2 border-s-4 mt-3">
+          <div className="w-10/12  h-full border-2 border-s-4 mt-3">
             {expandStates[index] && <ParallaxScroll images={images} />}
           </div>
         </div>
