@@ -38,7 +38,7 @@ export function FloatingDockDemo() {
       icon: (
         <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://www.instagram.com/srirangalaser/",
+      href: "https://www.instagram.com/",
     },
     {
       title: "Twitter",
