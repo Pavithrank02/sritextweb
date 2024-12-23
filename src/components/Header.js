@@ -17,9 +17,9 @@ const Header = () => {
           className="cursor-pointer  text-green-700"
           onClick={handleClick}
         >
-          <img src="https://static.wixstatic.com/media/446146_88d46b199dae40d8b992490cb9aedf28.jpg/v1/fill/w_378,h_190,al_c,lg_1,q_80,enc_auto/446146_88d46b199dae40d8b992490cb9aedf28.jpg" 
+          <img src="https://ik.imagekit.io/wratuu6c1/sritex.png?updatedAt=1734755602714" 
           alt="logo" 
-          className="h-16"/>
+          className="h-24 w-28"/>
 
         </div>
 
