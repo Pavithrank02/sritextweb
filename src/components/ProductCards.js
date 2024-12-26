@@ -7,7 +7,7 @@ export function ProductCards() {
       products: [
         {
           title: "Automatic Cotton Baling Press",
-          src: "https://images.squarespace-cdn.com/content/v1/54ff7cd3e4b0bc757625e06d/1484265999119-XUVJZYMD4V6TETXW97OT/Manufacturing+Plant",
+          src: "https://5.imimg.com/data5/YW/RT/MY-2995798/hydraulic-baling-press-500x500.jpg",
           details: [
             ["Price", "₹ 12,00,000/ Unit"],
             ["Phase", "Three Phase"],
@@ -71,7 +71,7 @@ export function ProductCards() {
       products: [
         {
           title: "Charcoal Briquette Machine",
-          src: "https://images.squarespace-cdn.com/content/v1/54ff7cd3e4b0bc757625e06d/1484265999119-XUVJZYMD4V6TETXW97OT/Manufacturing+Plant",
+          src: "https://5.imimg.com/data5/YW/RT/MY-2995798/hydraulic-baling-press-500x500.jpg",
           details: [
             ["Price", "Get Quote"],
             ["Brand", "	Sritex"],
