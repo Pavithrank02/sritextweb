@@ -23,7 +23,7 @@ const Modals = ({ isOpen, onClose, card,modalDatas }) => {
           alt={card.title}
           className="mb-6 w-full h-60 sm:h-80 lg:h-96 object-cover rounded-lg shadow-lg"
         /> */}
-        <AnimatedTestimonialsDemo modalDatas={modalDatas}/>
+        <AnimatedTestimonialsDemo modalDatas={card.modalData}/>
         <p className="text-lg text-gray-700 mb-6 -mt-10">{card.description}</p>
 
         {/* Table displaying product details */}

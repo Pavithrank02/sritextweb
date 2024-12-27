@@ -41,6 +41,7 @@ export function FocusCards({ cards, size, width,modalData }) {
   console.log("cards", cards);
   const [hovered, setHovered] = useState(null);
   const [selectedCard, setSelectedCard] = useState(null);
+  const [modalDataIndex, setModalDataIndex] = useState(null);
 
   const handleCardClick = (card) => {
     setSelectedCard(card); // Set the selected card to open the modal
@@ -55,7 +56,7 @@ export function FocusCards({ cards, size, width,modalData }) {
     cards && cards[0] && Array.isArray(cards[0].products)
       ? cards[0].products
       : [];
-
+  
   return (
     <div className="md:flex md:justify-center ">
       <div className="mt-28 mb-5 md:w-10/12 px-4 py-6 border-4 border-neutral-300 rounded-xl shadow-xl flex flex-col justify-center items-center">
@@ -86,8 +87,9 @@ export function FocusCards({ cards, size, width,modalData }) {
         </div>
 
         {/* Modal to show card details */}
+        
         {selectedCard && (
-          <Modals isOpen={true} onClose={closeModal} card={selectedCard} modalDatas={modalData} />
+          <Modals isOpen={true} onClose={closeModal} card={selectedCard}  />
         )}
       </div>
     </div>
