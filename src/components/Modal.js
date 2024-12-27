@@ -1,6 +1,8 @@
 import React from 'react';
+import { AnimatedTestimonialsDemo } from './AnimatedTestimonialsDemo';
 
-const Modals = ({ isOpen, onClose, card }) => {
+
+const Modals = ({ isOpen, onClose, card,modalDatas }) => {
     console.log(card)
   return (
     <div
@@ -16,12 +18,13 @@ const Modals = ({ isOpen, onClose, card }) => {
         onClick={(e) => e.stopPropagation()} 
       >
         <h2 className="text-3xl font-semibold mb-6 text-gray-800">{card.title}</h2>
-        <img
+        {/* <img
           src={card.src}
           alt={card.title}
           className="mb-6 w-full h-60 sm:h-80 lg:h-96 object-cover rounded-lg shadow-lg"
-        />
-        <p className="text-lg text-gray-700 mb-6">{card.description}</p>
+        /> */}
+        <AnimatedTestimonialsDemo modalDatas={modalDatas}/>
+        <p className="text-lg text-gray-700 mb-6 -mt-10">{card.description}</p>
 
         {/* Table displaying product details */}
         <table className="min-w-full table-auto mb-6 border-collapse rounded-lg overflow-hidden">

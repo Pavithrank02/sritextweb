@@ -37,7 +37,7 @@ export const Card = React.memo(
 
 Card.displayName = "Card";
 
-export function FocusCards({ cards, size, width }) {
+export function FocusCards({ cards, size, width,modalData }) {
   console.log("cards", cards);
   const [hovered, setHovered] = useState(null);
   const [selectedCard, setSelectedCard] = useState(null);
@@ -87,7 +87,7 @@ export function FocusCards({ cards, size, width }) {
 
         {/* Modal to show card details */}
         {selectedCard && (
-          <Modals isOpen={true} onClose={closeModal} card={selectedCard} />
+          <Modals isOpen={true} onClose={closeModal} card={selectedCard} modalDatas={modalData} />
         )}
       </div>
     </div>
