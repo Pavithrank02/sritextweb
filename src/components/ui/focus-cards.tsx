@@ -68,11 +68,11 @@ export function FocusCards({ cards, size, width,modalData }) {
 
         {/* Grid for the cards */}
         <div
-          className={`grid grid-cols-1 sm:grid-cols-${size} md:grid-cols-${size} gap-10 w-${width} cursor-pointer`}
+          className={`grid grid-cols-1 sm:grid-cols-${size} md:grid-cols-${size} gap-10 w-${width} cursor-pointer `}
         >
           {products.length > 0
             ? products.map((card, index) => (
-                <div className="flex flex-col justify-between" key={card.title}>
+                <div className="flex flex-col justify-between border-4 border-green-500 rounded-xl shadow-xl" key={card.title}>
                   <Card
                     card={card}
                     index={index}

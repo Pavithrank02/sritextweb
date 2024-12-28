@@ -1,9 +1,21 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IconMinus, IconPlus } from "@tabler/icons-react";
 import { ParallaxScroll } from "../components/ui/parallax-scroll.tsx";
 
 export function GalleryShow() {
+  const [img, setImg] = useState()
+  console.log(img)
+
+  useEffect(() =>{
+    fetchImg()
+  },[])
+ const fetchImg = async() => {
+  const data = await fetch("https://ik.imagekit.io/wratuu6c1/dashboard/media-collections/Office")
+  const json = await data.json()
+  setImg(json)
+
+ }
   const products = [
     {
       name: "Products",
