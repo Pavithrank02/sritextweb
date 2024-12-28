@@ -17,7 +17,7 @@ export function LintSuperCleaningCard() {
             },
             {
               
-              src: "https://5.imimg.com/data5/RU/XD/MY-2995798/centrifugal-air-blower-500x500.jpg",
+              src: "https://ik.imagekit.io/wratuu6c1/IMG_1075.JPEG?updatedAt=1735289004158",
             },
             {
               
@@ -29,7 +29,7 @@ export function LintSuperCleaningCard() {
             },
             {
               
-              src: "https://ik.imagekit.io/wratuu6c1/blower%203.PNG?updatedAt=1735291707025",
+              src: "https://ik.imagekit.io/wratuu6c1/IMG_1075.JPEG?updatedAt=17352890041585",
             },
           ],
           src: "https://ik.imagekit.io/wratuu6c1/IMG_1075.JPEG?updatedAt=1735289004158",

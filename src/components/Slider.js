@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { useSpring, animated } from '@react-spring/web';
 
 const images = [
-  "https://via.placeholder.com/1920x1080?text=Image+1",
-  "https://via.placeholder.com/1920x1080?text=Image+2",
-  "https://via.placeholder.com/1920x1080?text=Image+3",
-  "https://via.placeholder.com/1920x1080?text=Image+4",
+  "https://ik.imagekit.io/wratuu6c1/IMG_2664.jpg?updatedAt=1735360100821",
+  "https://ik.imagekit.io/wratuu6c1/IMG_2668.jpg?updatedAt=1735360100850",
+  "https://ik.imagekit.io/wratuu6c1/IMG_2667.jpg?updatedAt=1735360101798",
+  "https://ik.imagekit.io/wratuu6c1/IMG_2666.jpg?updatedAt=1735360101528",
 ];
 
 const Slider = () => {
@@ -45,7 +45,7 @@ const Slider = () => {
             <img
               src={src}
               alt={`Slide ${index}`}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
             />
           </div>
         ))}

@@ -3,14 +3,14 @@ import ProductOverview from './ProductOverview'; // Import the ProductOverview c
 
 // Sample products (you can add more)
 const products = [
-  { id: 1, name: 'Product 1', description: 'This is a great product.', price: 29.99, image: 'https://via.placeholder.com/300x200' },
-  { id: 2, name: 'Product 2', description: 'This is another great product.', price: 49.99, image: 'https://via.placeholder.com/300x200' },
-  { id: 3, name: 'Product 3', description: 'Best seller product.', price: 99.99, image: 'https://via.placeholder.com/300x200' },
-  { id: 4, name: 'Product 4', description: 'Affordable and high quality.', price: 19.99, image: 'https://via.placeholder.com/300x200' },
-  { id: 5, name: 'Product 5', description: 'Premium quality product.', price: 149.99, image: 'https://via.placeholder.com/300x200' },
-  { id: 6, name: 'Product 6', description: 'New arrival product.', price: 79.99, image: 'https://via.placeholder.com/300x200' },
-  { id: 7, name: 'Product 7', description: 'Hot product of the season.', price: 129.99, image: 'https://via.placeholder.com/300x200' },
-  { id: 8, name: 'Product 8', description: 'Limited edition item.', price: 199.99, image: 'https://via.placeholder.com/300x200' },
+  { id: 1, name: 'Product 1', description: 'This is a great product.', price: 29.99, image: 'https://5.imimg.com/data5/EF/RX/MY-2995798/industrial-air-blower-500x500.jpg' },
+  { id: 2, name: 'Product 2', description: 'This is another great product.', price: 49.99, image: 'https://ik.imagekit.io/wratuu6c1/IMG_1035.JPEG?updatedAt=1735289152986' },
+  { id: 3, name: 'Product 3', description: 'Best seller product.', price: 99.99, image: 'https://ik.imagekit.io/wratuu6c1/IMG_1075.JPEG?updatedAt=1735289004158' },
+  { id: 4, name: 'Product 4', description: 'Affordable and high quality.', price: 19.99, image: 'https://ik.imagekit.io/wratuu6c1/IMG_1089.JPEG?updatedAt=1735271418463' },
+  { id: 5, name: 'Product 5', description: 'Premium quality product.', price: 149.99, image: 'https://ik.imagekit.io/wratuu6c1/Baling%20Machine%201.jpg?updatedAt=1735288594343' },
+  { id: 6, name: 'Product 6', description: 'New arrival product.', price: 79.99, image: 'https://5.imimg.com/data5/FN/QO/MY-2995798/manual-baling-press-500x500.jpg' },
+  { id: 7, name: 'Product 7', description: 'Hot product of the season.', price: 129.99, image: 'https://5.imimg.com/data5/YW/RT/MY-2995798/hydraulic-baling-press-500x500.jpg' },
+  { id: 8, name: 'Product 8', description: 'Limited edition item.', price: 199.99, image: 'https://5.imimg.com/data5/IE/YH/MY-2995798/cotton-baling-press-500x500.jpg' },
 ];
 
 const ProductSlider = () => {

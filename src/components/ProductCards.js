@@ -15,7 +15,7 @@ export function ProductCards() {
             },
             {
               
-              src: "https://5.imimg.com/data5/RU/XD/MY-2995798/centrifugal-air-blower-500x500.jpg",
+              src: "https://ik.imagekit.io/wratuu6c1/Baling%20Machine%201.jpg?updatedAt=1735288594343",
             },
             {
               
@@ -23,11 +23,11 @@ export function ProductCards() {
             },
             {
               
-              src: "https://5.imimg.com/data5/EF/RX/MY-2995798/industrial-air-blower-500x500.jpg",
+              src: "https://ik.imagekit.io/wratuu6c1/Baling%20Machine%201.jpg?updatedAt=1735288594343",
             },
             {
               
-              src: "https://ik.imagekit.io/wratuu6c1/blower%203.PNG?updatedAt=1735291707025",
+              src: "https://ik.imagekit.io/wratuu6c1/Baling%20Machine%201.jpg?updatedAt=1735288594343",
             },
           ],
           src: "https://ik.imagekit.io/wratuu6c1/Baling%20Machine%201.jpg?updatedAt=1735288594343",
@@ -88,7 +88,7 @@ export function ProductCards() {
             },
             {
               
-              src: "https://5.imimg.com/data5/RU/XD/MY-2995798/centrifugal-air-blower-500x500.jpg",
+              src: "https://5.imimg.com/data5/FN/QO/MY-2995798/manual-baling-press-500x500.jpg",
             },
             {
               
@@ -100,7 +100,7 @@ export function ProductCards() {
             },
             {
               
-              src: "https://ik.imagekit.io/wratuu6c1/blower%203.PNG?updatedAt=1735291707025",
+              src: "https://5.imimg.com/data5/FN/QO/MY-2995798/manual-baling-press-500x500.jpg",
             },
           ],
           src: "https://5.imimg.com/data5/FN/QO/MY-2995798/manual-baling-press-500x500.jpg",

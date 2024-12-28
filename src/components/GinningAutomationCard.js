@@ -17,7 +17,7 @@ export function GinningAutomationCard() {
             },
             {
               
-              src: "https://5.imimg.com/data5/RU/XD/MY-2995798/centrifugal-air-blower-500x500.jpg",
+              src: "https://ik.imagekit.io/wratuu6c1/IMG_1089.JPEG?updatedAt=1735271418463",
             },
             {
               
@@ -25,7 +25,7 @@ export function GinningAutomationCard() {
             },
             {
               
-              src: "https://5.imimg.com/data5/EF/RX/MY-2995798/industrial-air-blower-500x500.jpg",
+              src: "https://ik.imagekit.io/wratuu6c1/IMG_1089.JPEG?updatedAt=1735271418463",
             },
             {
               
