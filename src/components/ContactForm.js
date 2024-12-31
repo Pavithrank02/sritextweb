@@ -187,6 +187,7 @@ const ContactForm = () => {
                 <div className="ml-3">
                   <div className="font-bold">Phone</div>
                   <div className="text-lime-800">91 9095726699</div>
+                  <div className="text-lime-800">91 9585590358</div>
                 </div>
               </div>
               <div className="flex flex-row justify-start items-center">
