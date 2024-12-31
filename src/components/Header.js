@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import FloatingButton from "./FloatingButton";
+import img from "../assets/images/sritex.jpg";
 const Header = () => {
   const navigate = useNavigate();
   
@@ -17,9 +18,9 @@ const Header = () => {
           className="cursor-pointer  text-green-700"
           onClick={handleClick}
         >
-          <img src="https://ik.imagekit.io/wratuu6c1/sritex.png?updatedAt=1734755602714" 
+          <img src={img} 
           alt="logo" 
-          className="h-24 w-28"/>
+          className="h-16 w-36"/>
 
         </div>
 

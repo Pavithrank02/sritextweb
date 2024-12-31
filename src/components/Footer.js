@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { IconPhone, IconMapPin, IconMailFilled } from "@tabler/icons-react";
 import { FloatingDockDemo } from "./FooterIcons";
-import img from "../assets/images/sritex.png";
+import img from "../assets/images/sritex (6).png";
 
 const Footer = () => {
   const date = new Date().getFullYear();
@@ -13,7 +13,7 @@ const Footer = () => {
         {/* Company Info Section */}
         <div className="flex flex-col items-center sm:items-start justify-center text-justify mb-6 md:mb-0 md:w-1/2">
           <div className="flex items-center justify-center mb-4">
-            <img src={img} className="h-16 md:h-32 md:w-40" alt="Logo" />
+            <img src={img} className="h-16 md:h-32 md:w-72" alt="Logo" />
           </div>
           <div className="text-white text-sm md:text-lg font-light w-full md:w-11/12">
             Sritex Hi Tech Machines prominent manufacturers and traders of a

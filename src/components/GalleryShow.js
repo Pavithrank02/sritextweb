@@ -34,17 +34,17 @@ export function GalleryShow() {
         "https://ik.imagekit.io/wratuu6c1/IMG_1116.JPEG?updatedAt=1735271418396",
       ],
     },
-    {
-      name: "Machinaries",
-      images: [
-        "https://ik.imagekit.io/wratuu6c1/machinaries/IMG_2689.jpg?updatedAt=1735380286197",
-        "https://ik.imagekit.io/wratuu6c1/machinaries/IMG_2688.jpg?updatedAt=1735380283468",
-        "https://ik.imagekit.io/wratuu6c1/machinaries/IMG_2687.jpg?updatedAt=1735380286113",
-        "https://ik.imagekit.io/wratuu6c1/machinaries/IMG_2690.jpg?updatedAt=1735380286107",
-        "https://ik.imagekit.io/wratuu6c1/machinaries/IMG_2686.jpg?updatedAt=1735380285875",
-        "https://ik.imagekit.io/wratuu6c1/machinaries/IMG_2691.jpg?updatedAt=1735380286116"
-      ],
-    },
+    // {
+    //   name: "Machinaries",
+    //   images: [
+    //     "https://ik.imagekit.io/wratuu6c1/machinaries/IMG_2689.jpg?updatedAt=1735380286197",
+    //     "https://ik.imagekit.io/wratuu6c1/machinaries/IMG_2688.jpg?updatedAt=1735380283468",
+    //     "https://ik.imagekit.io/wratuu6c1/machinaries/IMG_2687.jpg?updatedAt=1735380286113",
+    //     "https://ik.imagekit.io/wratuu6c1/machinaries/IMG_2690.jpg?updatedAt=1735380286107",
+    //     "https://ik.imagekit.io/wratuu6c1/machinaries/IMG_2686.jpg?updatedAt=1735380285875",
+    //     "https://ik.imagekit.io/wratuu6c1/machinaries/IMG_2691.jpg?updatedAt=1735380286116"
+    //   ],
+    // },
     {
       name: "SriTex",
       images: [
