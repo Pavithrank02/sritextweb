@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { IconPhone, IconMapPin, IconMailFilled } from "@tabler/icons-react";
 import { FloatingDockDemo } from "./FooterIcons";
-import img from "../assets/images/sritex (6).png";
+import img from "../assets/images/sritex.jpg";
 
 const Footer = () => {
   const date = new Date().getFullYear();
