@@ -77,14 +77,18 @@ const ContactForm = () => {
               Contact <span className="text-green-700">Us</span>
             </h2>
             <p className="text-sm sm:text-base mb-5">
-              If you have any questions, concerns, or feedback, please feel free to reach out to us using the form.
+              If you have any questions, concerns, or feedback, please feel free
+              to reach out to us using the form.
             </p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-4 w-full">
             {/* Name Field */}
             <div className="form-group w-full">
-              <label htmlFor="name" className="block text-sm font-bold text-green-700">
+              <label
+                htmlFor="name"
+                className="block text-sm font-bold text-green-700"
+              >
                 Contact Name
               </label>
               <input
@@ -97,12 +101,17 @@ const ContactForm = () => {
                 className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-700"
                 required
               />
-              {errors.name && <small className="text-red-500 text-xs">{errors.name}</small>}
+              {errors.name && (
+                <small className="text-red-500 text-xs">{errors.name}</small>
+              )}
             </div>
 
             {/* Email Field */}
             <div className="form-group w-full">
-              <label htmlFor="email" className="block text-sm font-bold text-green-600">
+              <label
+                htmlFor="email"
+                className="block text-sm font-bold text-green-600"
+              >
                 Email Id
               </label>
               <input
@@ -115,12 +124,17 @@ const ContactForm = () => {
                 className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-700"
                 required
               />
-              {errors.email && <small className="text-red-500 text-xs">{errors.email}</small>}
+              {errors.email && (
+                <small className="text-red-500 text-xs">{errors.email}</small>
+              )}
             </div>
 
             {/* City Field */}
             <div className="form-group w-full">
-              <label htmlFor="city" className="block text-sm font-bold text-green-600">
+              <label
+                htmlFor="city"
+                className="block text-sm font-bold text-green-600"
+              >
                 City
               </label>
               <input
@@ -136,7 +150,10 @@ const ContactForm = () => {
 
             {/* Message Field */}
             <div className="form-group w-full">
-              <label htmlFor="message" className="block text-sm font-bold text-green-700">
+              <label
+                htmlFor="message"
+                className="block text-sm font-bold text-green-700"
+              >
                 Let's Talk About Your Idea
               </label>
               <textarea
@@ -148,7 +165,9 @@ const ContactForm = () => {
                 className="mt-2 p-3 w-full h-32 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-700"
                 required
               />
-              {errors.message && <small className="text-red-500 text-xs">{errors.message}</small>}
+              {errors.message && (
+                <small className="text-red-500 text-xs">{errors.message}</small>
+              )}
             </div>
 
             {/* Submit Button */}
@@ -168,6 +187,7 @@ const ContactForm = () => {
                 <div className="ml-3">
                   <div className="font-bold">Phone</div>
                   <div className="text-lime-800">91 9095726699</div>
+                  <div className="text-lime-800">91 9585590358</div>
                 </div>
               </div>
               <div className="flex flex-row justify-start items-center">
@@ -182,14 +202,16 @@ const ContactForm = () => {
 
           {/* Display status message */}
           {formStatus && (
-            <p className="mt-4 text-center text-green-700 font-semibold">{formStatus}</p>
+            <p className="mt-4 text-center text-green-700 font-semibold">
+              {formStatus}
+            </p>
           )}
         </div>
 
         {/* Google Maps Section */}
         <div className="lg:w-1/2 w-full flex justify-center items-center bg-emerald-700 rounded-r-xl p-4">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3915.325664182678!2d77.14355007587106!3d11.089088253347125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zM13CsDA1JzIwLjciTiA3N8KwMDgnNDYuMSJF!5e0!3m2!1sen!2sin!4v1733302851096!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.323293542337!2d77.14356367587104!3d11.089265253343703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba857a12fce0e59%3A0xa8be78090c68acc5!2sSritex%20Hi-Tech%20Machines!5e0!3m2!1sen!2sin!4v1734683477582!5m2!1sen!2sin"
             width="100%"
             height="730"
             title="map"
@@ -205,3 +227,4 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+

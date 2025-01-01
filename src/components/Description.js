@@ -7,7 +7,7 @@ const Description = () => {
         {/* Image Section */}
         <div className=" mb-4 sm:mb-0 sm:w-6/12">
           <img
-            src="https://images.squarespace-cdn.com/content/v1/54ff7cd3e4b0bc757625e06d/1484265999119-XUVJZYMD4V6TETXW97OT/Manufacturing+Plant"
+            src="https://ik.imagekit.io/wratuu6c1/IMG_1089.JPEG?updatedAt=1735271418463"
             alt="aboutimg"
             className="  object-cover rounded-lg"
           />

@@ -1,50 +1,14 @@
-import { FocusCards } from "../components/ui/focus-cards.tsx";
+import { FocusCards } from "./ui/focus-cards.tsx";
 
-export function ProductCards() {
-  
+export function BucketElevatorCard() {
+ 
   const cards = [
     {
-      List: "Cotton Baling Press Machine",
+      List: "Others",
+      
       products: [
         {
-          title: "Automatic Cotton Baling Press",
-          modalData : [
-            {
-              src: "https://imagekit.io/player/embed/wratuu6c1/IMG_1113.MP4?updatedAt=1735290484777&thumbnail=https%3A%2F%2Fik.imagekit.io%2Fwratuu6c1%2FIMG_1113.MP4%2Fik-thumbnail.jpg%3FupdatedAt%3D1735290484777&updatedAt=1735290484777",
-              type:"video"
-            },
-            {
-              
-              src: "https://ik.imagekit.io/wratuu6c1/Baling%20Machine%201.jpg?updatedAt=1735288594343",
-            },
-            {
-              
-              src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            },
-            {
-              
-              src: "https://ik.imagekit.io/wratuu6c1/Baling%20Machine%201.jpg?updatedAt=1735288594343",
-            },
-            {
-              
-              src: "https://ik.imagekit.io/wratuu6c1/Baling%20Machine%201.jpg?updatedAt=1735288594343",
-            },
-          ],
-          src: "https://ik.imagekit.io/wratuu6c1/Baling%20Machine%201.jpg?updatedAt=1735288594343",
-          details: [
-            ["Price", "₹ 12,00,000/ Unit"],
-            ["Phase", "Three Phase"],
-            ["Automatic Grade", "Manual, Semi-Automatic, Automatic"],
-            ["Capacity", "150 - 300 tons"],
-            ["Material (To be worked upon)", "Textile"],
-            ["Hydraulic Pressure (Bar)", "150 - 180 bar"],
-            ["Production Rate (Bales/Hour)", "4-12 bale/hr"],
-            ["Power", "10 - 40 HP"],
-          ],
-        },
-        // https://drive.google.com/file/d/0B4Y-whsyiuGOMi1xaGVOSHJYSndyUlpqTHpkSUtUT2NkU044/view?usp=sharing&resourcekey=0-wBGX6fGkTHu7ET12XovL1g
-        {
-          title: "Cotton Baling Press",
+          title: "Bucket Elevator System",
           modalData : [
             {
               src: "https://imagekit.io/player/embed/wratuu6c1/IMG_1113.MP4?updatedAt=1735290484777&thumbnail=https%3A%2F%2Fik.imagekit.io%2Fwratuu6c1%2FIMG_1113.MP4%2Fik-thumbnail.jpg%3FupdatedAt%3D1735290484777&updatedAt=1735290484777",
@@ -67,20 +31,16 @@ export function ProductCards() {
               src: "https://ik.imagekit.io/wratuu6c1/blower%203.PNG?updatedAt=1735291707025",
             },
           ],
-          src: "https://5.imimg.com/data5/IE/YH/MY-2995798/cotton-baling-press-500x500.jpg",
+          src: "https://ik.imagekit.io/wratuu6c1/IMG_1035.JPEG?updatedAt=1735289152986",
           details: [
-            ["Price", "₹ 5,00,000/ Unit"],
-            ["Automatic Grade", "Manual, Semi-Automatic, Automatic"],
-            ["Capacity", "150 - 300 tons"],
-            ["Material (To be worked upon)", "Textile"],
-            ["No. Of Cylinder", "2"],
-            ["Oil tank capacity (Litres)", "	400 - 1200 liters"],
-            ["Working Pressure", "		150 - 180 bar"],
-            ["Production Capacity", "4-12 bale/hr"],
+            ["Price", "₹ 18,000"],
+            ["Brand", "Sritex"],
+            ["Application", "Cotton Ginning Plant"],
+            ["Length", "	10 - 20 feet"],
           ],
         },
         {
-          title: "Cotton Baling Press",
+          title: "Lint Super Cleaning Machine",
           modalData : [
             {
               src: "https://imagekit.io/player/embed/wratuu6c1/IMG_1113.MP4?updatedAt=1735290484777&thumbnail=https%3A%2F%2Fik.imagekit.io%2Fwratuu6c1%2FIMG_1113.MP4%2Fik-thumbnail.jpg%3FupdatedAt%3D1735290484777&updatedAt=1735290484777",
@@ -88,7 +48,7 @@ export function ProductCards() {
             },
             {
               
-              src: "https://5.imimg.com/data5/FN/QO/MY-2995798/manual-baling-press-500x500.jpg",
+              src: "https://ik.imagekit.io/wratuu6c1/IMG_1075.JPEG?updatedAt=1735289004158",
             },
             {
               
@@ -100,22 +60,21 @@ export function ProductCards() {
             },
             {
               
-              src: "https://5.imimg.com/data5/FN/QO/MY-2995798/manual-baling-press-500x500.jpg",
+              src: "https://ik.imagekit.io/wratuu6c1/IMG_1075.JPEG?updatedAt=17352890041585",
             },
           ],
-          src: "https://5.imimg.com/data5/FN/QO/MY-2995798/manual-baling-press-500x500.jpg",
+          src: "https://ik.imagekit.io/wratuu6c1/IMG_1075.JPEG?updatedAt=1735289004158",
           details: [
-            ["Price", "₹ 5,00,000/ Unit"],
-            ["Automatic Grade", "Manual, Semi-Automatic, Automatic"],
-            ["Capacity", "150 - 300 tons"],
-            ["Material (To be worked upon)", "Textile"],
-            ["Production Capacity", "	4-12 bale/hr"],
-            ["Voltage", "	380 to 420 V"],
+            ["Price", "₹  2,50,000/ Unit"],
             ["Frequency", "50/60 Hz"],
+            ["Production Capacity", "	1 - 3 ton/hr"],
+            ["Brand", "		Sritex"],
+            ["Voltage", "380V"],
+            ["Body Material", "Mild Steel"],
           ],
         },
         {
-          title: "Hydraulic Baling Press",
+          title: "Kappas Pre Cleaning Machine",
           modalData : [
             {
               src: "https://imagekit.io/player/embed/wratuu6c1/IMG_1113.MP4?updatedAt=1735290484777&thumbnail=https%3A%2F%2Fik.imagekit.io%2Fwratuu6c1%2FIMG_1113.MP4%2Fik-thumbnail.jpg%3FupdatedAt%3D1735290484777&updatedAt=1735290484777",
@@ -138,24 +97,60 @@ export function ProductCards() {
               src: "https://ik.imagekit.io/wratuu6c1/blower%203.PNG?updatedAt=1735291707025",
             },
           ],
-          src: "https://5.imimg.com/data5/YW/RT/MY-2995798/hydraulic-baling-press-500x500.jpg",
+          src: "https://images.unsplash.com/photo-1600271772470-bd22a42787b3?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           details: [
-            ["Price", "₹ 12,00,000/ Unit"],
-            ["Phase", "Three Phase"],
-            ["Automatic Grade", "Manual, Semi-Automatic, Automatic"],
-            ["Control Type", "Non-CNC"],
-            ["Hydraulic Pressure (Bar)", "150 - 180 bar"],
-            ["Bail Size (millimetre)", "1200*600*600 mm"],
-            ["Bail Weight(Kilogram)", "160 -180 kg"],
-            ["No. Of Cylinder", "1 or 2"],
-            ["Oil tank capacity (Litres)", "	400 - 1200 liters"],
-            ["Production Capacity", "	4-12 bale/hr"],
-            ["Power", "10 - 40 HP"],
+            ["Price", "₹  3,00,000/ Unit"],
+            ["Application", "Cotton Ginning Plant"],
+            ["Frequency", "50/60 Hz"],
+            ["Production Capacity", "	1 - 3 ton/hr"],
+            ["Machine Type", "Automatic"],
+            ["Brand", "		Sritex"],
+            ["Power Consumption", "5 hp"],
+            ["Voltage", "380V"],
+            ["Material", "Mild Steel"],
+          ],
+        },
+        {
+          title: "Cotton Screw Conveyor",
+          modalData : [
+            {
+              src: "https://imagekit.io/player/embed/wratuu6c1/IMG_1113.MP4?updatedAt=1735290484777&thumbnail=https%3A%2F%2Fik.imagekit.io%2Fwratuu6c1%2FIMG_1113.MP4%2Fik-thumbnail.jpg%3FupdatedAt%3D1735290484777&updatedAt=1735290484777",
+              type:"video"
+            },
+            {
+              
+              src: "https://5.imimg.com/data5/RU/XD/MY-2995798/centrifugal-air-blower-500x500.jpg",
+            },
+            {
+              
+              src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            },
+            {
+              
+              src: "https://5.imimg.com/data5/EF/RX/MY-2995798/industrial-air-blower-500x500.jpg",
+            },
+            {
+              
+              src: "https://ik.imagekit.io/wratuu6c1/blower%203.PNG?updatedAt=1735291707025",
+            },
+          ],
+          src: "https://images.unsplash.com/photo-1600271772470-bd22a42787b3?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          details: [
+            ["Price", "Get Latest Price"],
+            ["Type", "Spiral"],
+            ["Belt Material", "PU, PVC"],
+            ["Condition", "New"],
+            ["Voltage (Volt)", "	420 V"],
+            ["Automation Grade", "Manual"],
+            ["Orientation", "Horizontal"],
+            ["Type Of Drive", "Chain or Belt"],
+            ["Speed (Rpm)", "	40 - 70 rpm"],
+            ["Application", "Cotton Ginning Plant"],
+            ["Material Handling Capacity", "1-50 kg per feet"],
           ],
         },
       ],
     },
-   
   ];
 
   return <FocusCards cards={cards} size={3} width={"full"} />;

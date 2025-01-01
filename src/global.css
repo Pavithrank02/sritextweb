@@ -1,3 +1,22 @@
 .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
+  /* In your global CSS file or in tailwind.config.js */
+@keyframes infiniteScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Apply this animation to the slider when not hovered */
+.animate-slider {
+  animation: infiniteScroll 30s linear infinite;
+}
+
+/* Optional: Adjust the hover effect */
+.product-card:hover {
+  animation-play-state: paused;
+}

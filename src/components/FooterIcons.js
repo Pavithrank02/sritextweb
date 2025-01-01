@@ -38,7 +38,7 @@ export function FloatingDockDemo() {
       icon: (
         <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://www.instagram.com/srirangalaser/",
+      href: "https://www.instagram.com/",
     },
     {
       title: "Twitter",
@@ -48,18 +48,7 @@ export function FloatingDockDemo() {
       href: "#",
     },
 
-    {
-      title: "Aceternity UI",
-      icon: (
-        <img
-          src="https://assets.aceternity.com/logo-dark.png"
-          width={20}
-          height={20}
-          alt="Aceternity Logo" />
-      ),
-      href: "#",
-    },
-
+    
   ];
   return (
     (<div className="flex items-center justify-center  w-full bg">

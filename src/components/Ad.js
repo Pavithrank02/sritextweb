@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Ad = () => {
   return (
     <div className="flex flex-col sm:flex-row justify-evenly items-center h-auto sm:h-28 px-4 sm:px-8">
-      <div className="font-extrabold text-2xl sm:text-4xl md:text-5xl text-green-500 text-center sm:text-left">
+      <div className="font-extrabold text-2xl sm:text-4xl md:text-5xl text-green-700 text-center sm:text-left">
         Learn More About Product
       </div>
       <div className="mt-4 sm:mt-0 w-full mb-5 sm:mb-0 sm:w-auto">

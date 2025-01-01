@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import { IconMessageFilled } from "@tabler/icons-react";
 import FloatingButton from "./FloatingButton";
+import img from "../assets/images/sritex.jpg";
 const Header = () => {
   const navigate = useNavigate();
   
@@ -11,16 +11,16 @@ const Header = () => {
   
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50 bg-white shadow-md border-b-8 border-green-600 dark:bg-neutral-900 dark:border-neutral-700">
+    <div className="fixed top-0 left-0 w-full z-50 bg-white shadow-md border-b-8 border-green-600 ">
       <div className="flex justify-between items-center h-20 px-4 md:px-10">
         {/* Logo Section */}
         <div
           className="cursor-pointer  text-green-700"
           onClick={handleClick}
         >
-          <img src="https://static.wixstatic.com/media/446146_88d46b199dae40d8b992490cb9aedf28.jpg/v1/fill/w_378,h_190,al_c,lg_1,q_80,enc_auto/446146_88d46b199dae40d8b992490cb9aedf28.jpg" 
+          <img src={img} 
           alt="logo" 
-          className="h-16"/>
+          className="h-16 w-36"/>
 
         </div>
 
