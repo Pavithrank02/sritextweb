@@ -27,14 +27,14 @@ const Modals = ({ isOpen, onClose, card, modalDatas }) => {
         /> */}
         <div>
           <AnimatedTestimonialsDemo modalDatas={card.modalData} />
-          <TextGenerate words={card.description} />
+          {card.description ? <TextGenerate words={card?.description}/> : ""}
             
         </div>
 
         {/* Table displaying product details */}
         <table className="min-w-full table-auto mb-6 border-collapse rounded-lg overflow-hidden">
           <thead>
-            <tr className="bg-gradient-to-r from-indigo-600 to-blue-500 text-white">
+            <tr className="bg-gradient-to-r from-green-600 to-lime-500 text-white">
               <th className="px-6 py-3 text-left text-lg font-medium">
                 Attribute
               </th>
