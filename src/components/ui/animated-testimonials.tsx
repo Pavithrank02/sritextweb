@@ -30,8 +30,8 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
   };
 
   return (
-    <div className="max-w-sm md:max-w-4xl mx-auto antialiased font-sans px-4 md:px-4 lg:px-12 py-20">
-      <div className="relative grid grid-cols-1 md:grid-cols-1 gap-10 items-center ">
+    <div className="h-auto mx-auto antialiased font-sans px-4 md:px-4 lg:px-12 py-20 ">
+      <div className="relative grid grid-cols-1 md:grid-cols-1 gap-10 items-center">
         <div>
           <div className="relative h-80 w-full">
             <AnimatePresence>

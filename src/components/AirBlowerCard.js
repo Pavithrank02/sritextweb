@@ -9,6 +9,7 @@ export function AirBlowerCard() {
       products: [
         {
           title: "High Pressure Air Blower",
+          description: 'Being a well-distinguished company in the market, we are into offering High Pressure Air Blower.',
           modalData : [
             {
               src: "https://imagekit.io/player/embed/wratuu6c1/IMG_1113.MP4?updatedAt=1735290484777&thumbnail=https%3A%2F%2Fik.imagekit.io%2Fwratuu6c1%2FIMG_1113.MP4%2Fik-thumbnail.jpg%3FupdatedAt%3D1735290484777&updatedAt=1735290484777",
