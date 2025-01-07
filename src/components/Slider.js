@@ -54,13 +54,13 @@ const Slider = () => {
       {/* Navigation Buttons */}
       <button
         onClick={prevImage}
-        className="absolute top-1/2 left-5 transform -translate-y-1/2 bg-black text-white p-4 rounded-full shadow-lg hover:bg-gray-700 focus:outline-none transition duration-300 ease-in-out"
+        className="absolute top-1/2 left-5 transform -translate-y-1/2 bg-black text-customTextColor-white p-4 rounded-full shadow-lg hover:bg-gray-700 focus:outline-none transition duration-300 ease-in-out"
       >
         &#10094;
       </button>
       <button
         onClick={nextImage}
-        className="absolute top-1/2 right-5 transform -translate-y-1/2 bg-black text-white p-4 rounded-full shadow-lg hover:bg-gray-700 focus:outline-none transition duration-300 ease-in-out"
+        className="absolute top-1/2 right-5 transform -translate-y-1/2 bg-black text-customTextColor-white p-4 rounded-full shadow-lg hover:bg-gray-700 focus:outline-none transition duration-300 ease-in-out"
       >
         &#10095;
       </button>
@@ -72,7 +72,7 @@ const Slider = () => {
             key={index}
             onClick={() => setCurrentIndex(index)}
             className={`w-3 h-3 rounded-full cursor-pointer transition-all duration-300 ${
-              currentIndex === index ? 'bg-white scale-125' : 'bg-gray-500'
+              currentIndex === index ? 'bg-customBgColor-bg scale-125' : 'bg-gray-500'
             }`}
           />
         ))}

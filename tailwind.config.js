@@ -15,7 +15,8 @@ module.exports = {
         customTextColor: {
           DEFAULT: '#068343',
           light: '#23C55F',
-          dark: 'black'
+          dark: 'black',
+          white: "white"
           
         },
         customBorderColor: {
