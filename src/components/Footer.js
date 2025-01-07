@@ -7,15 +7,15 @@ import img from "../assets/images/sritex.jpg";
 const Footer = () => {
   const date = new Date().getFullYear();
   return (
-    <div className="bg-[#FBFCF1] flex flex-col justify-around w-full items-center py-6  border-y-2 border-green-600">
+    <div className="bg-customBgColor-bg flex flex-col justify-around w-full items-center py-6  border-y-2 border-customBorderColor">
       {/* Upper section with company info and contact */}
-      <div className="flex flex-col md:flex-row justify-between w-11/12 lg:w-9/12 border-b-4 border-x-lime-700 pb-4">
+      <div className="flex flex-col md:flex-row justify-between w-11/12 lg:w-9/12 border-b-4 border-x-customBorderColor pb-4">
         {/* Company Info Section */}
         <div className="flex flex-col items-center sm:items-start justify-center text-justify mb-6 md:mb-0 md:w-1/2">
           <div className="flex items-center justify-center mb-4">
             <img src={img} className="h-16 md:h-32 md:w-72" alt="Logo" />
           </div>
-          <div className="text-green-500 text-sm md:text-lg font-bold w-full md:w-11/12">
+          <div className="text-customTextColor-light text-sm md:text-lg font-bold w-full md:w-11/12">
             Sritex Hi Tech Machines prominent manufacturers and traders of a
             wide range of Air Blower, Hydraulic Press Machine, Baling Press,
             Belt Conveyor, Bucket Elevator Belt and Conveyor Belt. We are a
@@ -27,22 +27,22 @@ const Footer = () => {
 
         {/* Contact and Info Sections */}
         <div className="flex flex-col justify-between items-start md:items-start md:w-1/2">
-          <div className="text-green-700 font-bold text-lg md:text-2xl mb-4 md:mb-0">
+          <div className="text-customTextColor font-bold text-lg md:text-2xl mb-4 md:mb-0">
             Official info:
           </div>
           <div className="mb-6">
-            <p className="text-green-600 font-bold text-sm md:text-lg mb-2">
+            <p className="text-customTextColor font-bold text-sm md:text-lg mb-2">
               Contact Us:
             </p>
-            <div className="text-green-500 font-bold text-sm md:text-base flex flex-row items-center mb-2">
+            <div className="text-customTextColor-light font-bold text-sm md:text-base flex flex-row items-center mb-2">
               <IconPhone style={{ color: "#03C04A" }} />
               <span className="ml-2"> +91 9095726699</span>
             </div>
-            <div className="text-green-500 font-bold text-sm md:text-base flex flex-row items-center mb-2">
+            <div className="text-customTextColor-light font-bold text-sm md:text-base flex flex-row items-center mb-2">
               <IconMailFilled style={{ color: "#03C04A" }} />
               <span className="ml-2"> sritex06@gmail.com</span>
             </div>
-            <div className="text-green-500 font-bold text-sm md:text-base flex flex-row items-center">
+            <div className="text-customTextColor-light font-bold text-sm md:text-base flex flex-row items-center">
               <IconMapPin style={{ color: "#03C04A" }} />
               <span className="ml-2">
                 {" "}
@@ -54,10 +54,10 @@ const Footer = () => {
 
           {/* Open Hours */}
           <div className="mb-6">
-            <p className="text-green-600 font-bold text-sm md:text-lg mb-2">
+            <p className="text-customTextColor font-bold text-sm md:text-lg mb-2">
               Open Hours:
             </p>
-            <p className="text-green-500 font-semibold text-sm md:text-base">
+            <p className="text-customTextColor-light font-semibold text-sm md:text-base">
               Monday-Saturday: 9:00AM – 6:00PM
               <br />
               Sun: CLOSED
@@ -65,10 +65,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-green-500 font-bold text-sm md:text-lg text-center">
+      <div className="text-customTextColor font-bold text-sm md:text-lg text-center">
         <p className="mb-2">Follow Us</p>
         <motion.div
-          className="flex flex-row justify-between text-green-500 font-semibold w-32 md:w-44"
+          className="flex flex-row justify-between text-customTextColor-light font-semibold w-32 md:w-44"
           animate={{ x: 0, scale: 1 }}
           initial={{ scale: 0 }}
           transition={{ type: "spring", delay: 2 }}
@@ -78,7 +78,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Section with Copyright */}
-      <div className="text-green-500 text-sm md:text-base mt-4 font-bold">
+      <div className="text-customTextColor-light text-sm md:text-base mt-4 font-bold">
         <p>©{date} Sritex Hi Tech Machines Company – All rights reserved.</p>
       </div>
     </div>

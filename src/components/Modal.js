@@ -6,13 +6,13 @@ const Modals = ({ isOpen, onClose, card, modalDatas }) => {
   console.log(card);
   return (
     <div
-      className={`fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center transition-opacity z-50 ${
+      className={`fixed inset-0 bg-customBgColor-dark bg-opacity-50 flex items-center justify-center transition-opacity z-50 ${
         isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
       onClick={onClose}
     >
       <div
-        className={`bg-white mt-8 rounded-lg max-w-4xl w-full p-6 md:p-8 transition-transform transform scrollbar-hide ${
+        className={`bg-customBgColor-bg mt-8 rounded-lg max-w-4xl w-full p-6 md:p-8 transition-transform transform scrollbar-hide ${
           isOpen ? "scale-100" : "scale-90 opacity-0"
         } max-h-[80vh] sm:max-h-[85vh] lg:max-h-[90vh] overflow-auto`}
         onClick={(e) => e.stopPropagation()}
@@ -52,10 +52,10 @@ const Modals = ({ isOpen, onClose, card, modalDatas }) => {
                     index % 2 === 0 ? "bg-gray-50" : "bg-gray-100"
                   } hover:bg-blue-50 transition-all duration-300`}
                 >
-                  <td className="px-6 py-4 text-lg font-medium text-gray-800">
+                  <td className="px-6 py-4 text-lg font-medium text-customTextColor-dark">
                     {detail[0]}
                   </td>
-                  <td className="px-6 py-4 text-lg text-gray-600">
+                  <td className="px-6 py-4 text-lg text-customTextColor-dark">
                     {detail[1]}
                   </td>
                 </tr>

@@ -23,7 +23,7 @@ const FactTable = () => {
   };
 
   return (
-    <div className="flex flex-col justify-between items-center min-h-full bg-gray-100 p-4">
+    <div className="flex flex-col justify-between items-center min-h-full bg-customBgColor-bg p-4">
       <h1 className='text-4xl font-extrabold mb-4 text-center text-green-700'>Fact Sheet</h1>
       <motion.div
         initial="hidden"
@@ -39,7 +39,7 @@ const FactTable = () => {
             {Object.keys(data).map((key) => (
               <motion.div
                 key={key}
-                className="font-bold text-sm sm:text-lg text-gray-800"
+                className="font-bold text-sm sm:text-lg text-customTextColor-dark"
                 initial={{ x: -100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ delay: 0.2, type: 'spring' }}
@@ -54,7 +54,7 @@ const FactTable = () => {
             {Object.values(data).map((value, index) => (
               <motion.div
                 key={index}
-                className="text-sm sm:text-lg text-gray-600"
+                className="text-sm sm:text-lg text-customTextColor-dark"
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ delay: 0.2, type: 'spring' }}

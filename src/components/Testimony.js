@@ -4,7 +4,7 @@ import { InfiniteMovingCards } from "./InfiniteMovingCards.js";
 export function InfiniteMovingCardsDemo() {
   return (
     <div className="h-[40rem] sm:h-[50rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden px-4 sm:px-6">
-      <h2 className="text-3xl sm:text-4xl font-extrabold text-center text-green-600 mb-6 sm:mb-8">
+      <h2 className="text-3xl sm:text-4xl font-extrabold text-center text-customTextColor mb-6 sm:mb-8">
         What Our Clients Say
       </h2>
       <InfiniteMovingCards items={testimonials} direction="right" speed="slow" />

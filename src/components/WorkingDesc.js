@@ -2,14 +2,14 @@ import React from "react";
 
 const WorkingDesc = () => {
   return (
-    <div className="flex flex-col justify-center items-center w-full h-full py-16 bg-gray-50 dark:bg-gray-800">
+    <div className="flex flex-col justify-center items-center w-full h-full py-16 bg-customBgColor-bg dark:bg-gray-800">
       {/* Our Infrastructure Section */}
       <div className="w-full sm:w-10/12 mb-16 px-4 sm:px-8">
-        <p className="text-3xl sm:text-4xl font-extrabold text-green-700 mb-8 text-center">
+        <p className="text-3xl sm:text-4xl font-extrabold text-customTextColor mb-8 text-center">
           Our Infrastructure
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-between space-y-8 sm:space-y-0 sm:space-x-6">
-          <div className="w-full sm:w-1/2 text-justify text-lg font-medium text-gray-800 dark:text-gray-200">
+          <div className="w-full sm:w-1/2 text-justify text-lg font-medium text-customTextColor-dark dark:text-gray-200">
             We have a state-of-the-art manufacturing unit, which is spread over
             a vast area. Our production unit is equipped with all kinds of
             facilities required to undertake large-scale production. Being aware
@@ -33,7 +33,7 @@ const WorkingDesc = () => {
 
       {/* Why Us Section */}
       <div className="w-full sm:w-10/12 mb-16 px-4 sm:px-8">
-        <p className="text-3xl sm:text-4xl font-extrabold text-green-700 mb-8 text-center">
+        <p className="text-3xl sm:text-4xl font-extrabold text-customTextColor mb-8 text-center">
           Why Us
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-between space-y-8 sm:space-y-0 sm:space-x-6">
@@ -44,7 +44,7 @@ const WorkingDesc = () => {
               className="h-72 w-full sm:w-[60%] object-contain rounded-md shadow-lg"
             />
           </div>
-          <div className="w-full sm:w-1/2 text-justify text-lg text-gray-800 dark:text-gray-200 font-medium">
+          <div className="w-full sm:w-1/2 text-justify text-lg text-customTextColor-dark dark:text-gray-200 font-medium">
             We have progressed immensely under the able guidance of our
             passionate professionals who hold years of experience in this
             domain. They helped us in taking tough challenges and attaining
@@ -53,20 +53,20 @@ const WorkingDesc = () => {
             <p className="font-bold mt-4">Our key strength</p>
             <ul className="list-inside space-y-4 text-lg text-gray-700">
               <li className="flex items-center">
-                <span className="text-green-700 mr-2">✔</span>
+                <span className="text-customTextColor mr-2">✔</span>
                 Trouble-free payment modes.
               </li>
               <li className="flex items-center">
-                <span className="text-green-700 mr-2">✔</span>
+                <span className="text-customTextColor mr-2">✔</span>
                 The products we manufacture meet or exceed customer expectations
                 in terms of reliability, quality, and functionality.
               </li>
               <li className="flex items-center">
-                <span className="text-green-700 mr-2">✔</span>
+                <span className="text-customTextColor mr-2">✔</span>
                 We offer excellent customer service at every touchpoint.
               </li>
               <li className="flex items-center">
-                <span className="text-green-700 mr-2">✔</span>
+                <span className="text-customTextColor mr-2">✔</span>
                 We respond promptly to customer inquiries and provide helpful
                 and accurate information.
               </li>
@@ -77,11 +77,11 @@ const WorkingDesc = () => {
 
       {/* Client Satisfaction Section */}
       <div className="w-full sm:w-10/12 mb-16 px-4 sm:px-8">
-        <p className="text-3xl sm:text-4xl font-extrabold text-green-700 mb-8 text-center">
+        <p className="text-3xl sm:text-4xl font-extrabold text-customTextColor mb-8 text-center">
           Client Satisfaction
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-between space-y-8 sm:space-y-0 sm:space-x-6">
-          <div className="w-full sm:w-1/2 text-justify text-lg text-gray-800 dark:text-gray-200 font-medium">
+          <div className="w-full sm:w-1/2 text-justify text-lg text-customTextColor-dark dark:text-gray-200 font-medium">
             Being a client-centric organization, we ensure that every
             requirement of our customers is fulfilled. Our range of Industrial
             Machinery, Elevators, and Conveyors is offered to the clients at

@@ -11,7 +11,7 @@ const Header = () => {
   
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50 bg-[#FBFCF1] shadow-md border-b-8 border-green-600 ">
+    <div className="fixed top-0 left-0 w-full z-50 bg-customBgColor-bg shadow-md border-b-8 border-customBorderColor ">
       <div className="flex justify-between items-center h-20 px-4 md:px-10">
         {/* Logo Section */}
         <div
@@ -84,7 +84,7 @@ const Header = () => {
         {/* Contact Button */}
         <div>
           <NavLink to="/contact">
-            <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-lg font-medium transition duration-300 ease-in-out hover:bg-green-700 hover:scale-110 hidden md:block">
+            <button className="w-40 h-10 rounded-xl bg-customBgColor border dark:border-white border-transparent text-white text-lg font-medium transition duration-300 ease-in-out hover:bg-green-700 hover:scale-110 hidden md:block">
               Contact now
             </button>
           </NavLink>

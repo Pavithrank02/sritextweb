@@ -15,12 +15,12 @@ const Description = () => {
 
         {/* Text Section */}
         <div className=" md:w-10/12  flex flex-col justify-start items-center sm:items-center">
-          <div className="font-bold text-4xl sm:text-5xl text-green-600 mb-4">
+          <div className="font-bold text-4xl sm:text-5xl text-customTextColor mb-4">
             <h1 className="font-extrabold text-center sm:text-left">
               About Sritex
             </h1>
           </div>
-          <div className="text-justify text-sm w-full sm:w-11/12 items-center font-normal sm:text-lg ">
+          <div className="text-justify text-sm w-full sm:w-11/12 items-center font-normal sm:text-lg text-customTextColor-dark">
             Established in the year <span className="font-bold">2004</span>, we,{" "}
             <span className="font-bold">“Sritex Hi Tech Machines”, </span> are
             one of the prominent manufacturers and traders of a wide range of{" "}

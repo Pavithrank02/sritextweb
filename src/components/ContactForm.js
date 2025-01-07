@@ -73,8 +73,8 @@ const ContactForm = () => {
         {/* Form Section */}
         <div className="max-w-lg w-full p-6 shadow-lg rounded-lg border flex flex-col items-start lg:w-1/2">
           <div className="flex flex-col justify-around mb-6">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 animate__animated animate__fadeIn">
-              Contact <span className="text-green-700">Us</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-customTextColor-dark animate__animated animate__fadeIn">
+              Contact <span className="text-customTextColor">Us</span>
             </h2>
             <p className="text-sm sm:text-base mb-5">
               If you have any questions, concerns, or feedback, please feel free
@@ -87,7 +87,7 @@ const ContactForm = () => {
             <div className="form-group w-full">
               <label
                 htmlFor="name"
-                className="block text-sm font-bold text-green-700"
+                className="block text-sm font-bold text-customTextColor"
               >
                 Contact Name
               </label>
@@ -110,7 +110,7 @@ const ContactForm = () => {
             <div className="form-group w-full">
               <label
                 htmlFor="email"
-                className="block text-sm font-bold text-green-600"
+                className="block text-sm font-bold text-customTextColor"
               >
                 Email Id
               </label>
@@ -133,7 +133,7 @@ const ContactForm = () => {
             <div className="form-group w-full">
               <label
                 htmlFor="city"
-                className="block text-sm font-bold text-green-600"
+                className="block text-sm font-bold text-customTextColor"
               >
                 City
               </label>
@@ -152,7 +152,7 @@ const ContactForm = () => {
             <div className="form-group w-full">
               <label
                 htmlFor="message"
-                className="block text-sm font-bold text-green-700"
+                className="block text-sm font-bold text-customTextColor"
               >
                 Let's Talk About Your Idea
               </label>
@@ -174,7 +174,7 @@ const ContactForm = () => {
             <div>
               <button
                 type="submit"
-                className="w-full font-bold text-xl bg-green-700 text-white py-3 rounded-md hover:bg-green-700 transition duration-300 ease-in-out transform hover:scale-105"
+                className="w-full font-bold text-xl bg-customBgColor text-white py-3 rounded-md hover:bg-green-700 transition duration-300 ease-in-out transform hover:scale-105"
               >
                 {formStatus ? formStatus : "Submit"}
               </button>
@@ -183,18 +183,18 @@ const ContactForm = () => {
             {/* Contact Information */}
             <div className="flex flex-col sm:flex-row justify-between mt-6 w-full">
               <div className="flex flex-row justify-start items-center mb-4 sm:mb-0">
-                <IconPhoneCall className="h-8 w-8 text-green-700" />
+                <IconPhoneCall className="h-8 w-8 text-customTextColor" />
                 <div className="ml-3">
                   <div className="font-bold">Phone</div>
-                  <div className="text-lime-800">91 9095726699</div>
-                  <div className="text-lime-800">91 9585590358</div>
+                  <div className="text-customTextColor-light">91 9095726699</div>
+                  <div className="text-customTextColor-light">91 9585590358</div>
                 </div>
               </div>
               <div className="flex flex-row justify-start items-center">
-                <IconMailFilled className="h-8 w-8 text-green-700" />
+                <IconMailFilled className="h-8 w-8 text-customTextColor" />
                 <div className="ml-3">
                   <div className="font-bold">Email</div>
-                  <div className="text-lime-800">sritex06@gmail.com</div>
+                  <div className="text-customTextColor-light">sritex06@gmail.com</div>
                 </div>
               </div>
             </div>

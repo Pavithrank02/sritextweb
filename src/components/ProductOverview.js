@@ -16,10 +16,10 @@ const ProductOverview = ({ product }) => {
         <h3 className="text-xl sm:text-lg md:text-xl font-semibold text-gray-800 truncate mb-2">{product.name}</h3>
         
         {/* Product Description */}
-        <p className="text-gray-600 text-sm sm:text-base md:text-sm truncate flex-grow mb-2">{product.description}</p>
+        <p className="text-customTextColor-dark text-sm sm:text-base md:text-sm truncate flex-grow mb-2">{product.description}</p>
 
         {/* Product Price */}
-        <p className="text-xl sm:text-lg md:text-xl font-bold text-gray-900 mt-2">{`$${product.price.toFixed(2)}`}</p>
+        <p className="text-xl sm:text-lg md:text-xl font-bold text-customTextColor-dark mt-2">{`$${product.price.toFixed(2)}`}</p>
       </div>
     </div>
   );

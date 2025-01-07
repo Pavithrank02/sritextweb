@@ -13,9 +13,9 @@ const FloatingButton = () => {
   return (
     <div className="md:hidden fixed bottom-4 right-4 z-50">
       <NavLink to="/contact">
-        <button className="text-black p-3 rounded-full bg-black shadow-lg hover:bg-green-100 transition-all">
+        <button className="text-customTextColor-dark p-3 rounded-full bg-customBgColor shadow-lg hover:bg-green-100 transition-all">
           {/* Icon for the button */}
-          <IconMessageFilled className="h-full w-full text-green-500 dark:text-neutral-300" />
+          <IconMessageFilled className="h-full w-full text-customTextColor dark:text-neutral-300" />
         </button>
       </NavLink>
     </div>

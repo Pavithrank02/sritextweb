@@ -110,7 +110,7 @@ export function GalleryShow() {
         >
           {/* The div with the border and content */}
           <div
-            className="w-10/12 h-16 border-4 border-green-700 flex flex-row justify-between items-center rounded-md p-3"
+            className="w-10/12 h-16 border-4 border-customBorderColor flex flex-row justify-between items-center rounded-md p-3"
             onClick={() => handleExpand(index)}
           >
             <div className="text-lg font-extrabold cursor-pointer w-full sm:w-2/3 md:w-1/2 ml-3 truncate">
@@ -118,9 +118,9 @@ export function GalleryShow() {
             </div>
             <div className="bg-slate-200 cursor-pointer p-2 mr-3">
               {expandStates[index] ? (
-                <IconMinus className="h-6 w-6 text-green-700 font-extrabold dark:text-neutral-300" />
+                <IconMinus className="h-6 w-6 text-customTextColor font-extrabold dark:text-neutral-300" />
               ) : (
-                <IconPlus className="h-6 w-6 text-green-700 font-extrabold dark:text-neutral-300" />
+                <IconPlus className="h-6 w-6 text-customTextColor font-extrabold dark:text-neutral-300" />
               )}
             </div>
           </div>
