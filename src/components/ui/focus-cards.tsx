@@ -12,7 +12,7 @@ export const Card = React.memo(
       onMouseLeave={() => setHovered(null)}
       onClick={() => onCardClick(card)} // Trigger modal on card click
       className={cn(
-        "rounded-lg relative bg-gray-100 dark:bg-neutral-600 overflow-hidden h-60 md:h-96 w-full transition-all duration-300 ease-out",
+        "rounded-lg relative  overflow-hidden h-60 md:h-96 w-full transition-all duration-300 ease-out",
         hovered !== null && hovered !== index && "blur-sm scale-[0.98]"
       )}
     >
@@ -72,7 +72,7 @@ export function FocusCards({ cards, size, width,modalData }) {
         >
           {products.length > 0
             ? products.map((card, index) => (
-                <div className="flex flex-col justify-between border-4 border-green-500 rounded-xl shadow-xl" key={card.title}>
+                <div className="flex flex-col justify-between border-4 border-customBorderColor rounded-xl shadow-xl" key={card.title}>
                   <Card
                     card={card}
                     index={index}

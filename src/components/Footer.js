@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { IconPhone, IconMapPin, IconMailFilled } from "@tabler/icons-react";
 import { FloatingDockDemo } from "./FooterIcons";
 import img from "../assets/images/sritex.jpg";
+import {footerDesc,primaryContact,email,address} from '../data.js'
 
 const Footer = () => {
   const date = new Date().getFullYear();
@@ -16,12 +17,7 @@ const Footer = () => {
             <img src={img} className="h-16 md:h-32 md:w-72" alt="Logo" />
           </div>
           <div className="text-customTextColor-light text-sm md:text-lg font-bold w-full md:w-11/12">
-            Sritex Hi Tech Machines prominent manufacturers and traders of a
-            wide range of Air Blower, Hydraulic Press Machine, Baling Press,
-            Belt Conveyor, Bucket Elevator Belt and Conveyor Belt. We are a
-            partnership based venture. Our range is easy to operate and consume
-            less amount of power. These products are offered to the clients in
-            different sizes and specifications.
+           {footerDesc}
           </div>
         </div>
 
@@ -36,18 +32,17 @@ const Footer = () => {
             </p>
             <div className="text-customTextColor-light font-bold text-sm md:text-base flex flex-row items-center mb-2">
               <IconPhone style={{ color: "#03C04A" }} />
-              <span className="ml-2"> +91 9095726699</span>
+              <span className="ml-2"> {primaryContact}</span>
             </div>
             <div className="text-customTextColor-light font-bold text-sm md:text-base flex flex-row items-center mb-2">
               <IconMailFilled style={{ color: "#03C04A" }} />
-              <span className="ml-2"> sritex06@gmail.com</span>
+              <span className="ml-2"> {email}</span>
             </div>
             <div className="text-customTextColor-light font-bold text-sm md:text-base flex flex-row items-center">
               <IconMapPin style={{ color: "#03C04A" }} />
               <span className="ml-2">
                 {" "}
-                No. 4/96(4), Lakshmi Nagar Kollupalayam, Near Kaniyur TollGate,
-                Sulur, Coimbatore-641659, Tamil Nadu, India
+                {address}
               </span>
             </div>
           </div>

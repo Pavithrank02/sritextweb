@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FlipWords } from "../components/ui/flip-words.tsx";
+import {contactNow} from '../data.js'
 
 export function FlipWordsDemo() {
   const words = ["Better", "Smarter", "Harder", "Modern"];
@@ -25,7 +26,7 @@ export function FlipWordsDemo() {
       <div>
         <NavLink to="/contact">
           <button className="w-36 sm:w-40 h-12 sm:h-14 rounded-2xl bg-customBgColor border dark:border-white border-transparent text-white font-semibold text-base sm:text-lg">
-            Contact now
+            {contactNow}
           </button>
         </NavLink>
       </div>

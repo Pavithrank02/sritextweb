@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { IconPhoneCall, IconMailFilled } from "@tabler/icons-react";
+import {primaryContact,secondaryContact,email,contactDesc} from '../data.js'
 import "animate.css";
 
 const ContactForm = () => {
@@ -77,8 +78,7 @@ const ContactForm = () => {
               Contact <span className="text-customTextColor">Us</span>
             </h2>
             <p className="text-sm sm:text-base mb-5">
-              If you have any questions, concerns, or feedback, please feel free
-              to reach out to us using the form.
+              {contactDesc}
             </p>
           </div>
 
@@ -186,15 +186,15 @@ const ContactForm = () => {
                 <IconPhoneCall className="h-8 w-8 text-customTextColor" />
                 <div className="ml-3">
                   <div className="font-bold">Phone</div>
-                  <div className="text-customTextColor-light">91 9095726699</div>
-                  <div className="text-customTextColor-light">91 9585590358</div>
+                  <div className="text-customTextColor-light">{primaryContact}</div>
+                  <div className="text-customTextColor-light">{secondaryContact}</div>
                 </div>
               </div>
               <div className="flex flex-row justify-start items-center">
                 <IconMailFilled className="h-8 w-8 text-customTextColor" />
                 <div className="ml-3">
                   <div className="font-bold">Email</div>
-                  <div className="text-customTextColor-light">sritex06@gmail.com</div>
+                  <div className="text-customTextColor-light">{email}</div>
                 </div>
               </div>
             </div>

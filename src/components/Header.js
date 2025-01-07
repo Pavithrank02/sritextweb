@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import FloatingButton from "./FloatingButton";
 import img from "../assets/images/sritex.jpg";
+import {contactNow} from '../data.js'
 const Header = () => {
   const navigate = useNavigate();
   
@@ -85,7 +86,7 @@ const Header = () => {
         <div>
           <NavLink to="/contact">
             <button className="w-40 h-10 rounded-xl bg-customBgColor border dark:border-white border-transparent text-white text-lg font-medium transition duration-300 ease-in-out hover:bg-green-700 hover:scale-110 hidden md:block">
-              Contact now
+            {contactNow}
             </button>
           </NavLink>
         </div>

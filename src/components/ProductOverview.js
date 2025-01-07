@@ -6,7 +6,7 @@ const ProductOverview = ({ product }) => {
   }
 
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col w-96 sm:w-96 md:w-60 cursor-pointer lg:w-96 h-auto mb-5 ml-10 sm:ml-0 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+    <div className="bg-customBgColor-bg shadow-lg rounded-lg overflow-hidden flex flex-col w-96 sm:w-96 md:w-60 cursor-pointer lg:w-96 h-auto mb-5 ml-10 sm:ml-0 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
       {/* Product Image */}
       <img className="w-full h-72 object-fill" src={product.image} alt={product.name} />
 

@@ -12,7 +12,7 @@ const Modals = ({ isOpen, onClose, card, modalDatas }) => {
       onClick={onClose}
     >
       <div
-        className={`bg-customBgColor-bg mt-8 rounded-lg max-w-4xl w-full p-6 md:p-8 transition-transform transform scrollbar-hide ${
+        className={`bg-customBgColor-bg mt-8 rounded-xl max-w-4xl w-full p-6 md:p-8 transition-transform transform scrollbar-hide ${
           isOpen ? "scale-100" : "scale-90 opacity-0"
         } max-h-[80vh] sm:max-h-[85vh] lg:max-h-[90vh] overflow-auto`}
         onClick={(e) => e.stopPropagation()}
