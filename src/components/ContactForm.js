@@ -19,7 +19,7 @@ const ContactForm = () => {
 
   const [formStatus, setFormStatus] = useState("");
 
-  // Handle input change
+  // Handle input changes
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
