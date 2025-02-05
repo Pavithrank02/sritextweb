@@ -1,4 +1,3 @@
-// src/FAQ.js
 import React, { useState } from "react";
 import { IconCaretDownFilled, IconCaretUpFilled } from "@tabler/icons-react";
 
@@ -33,7 +32,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="w-7/12 mx-auto px-4 py-8">
+    <div className="w-full sm:w-7/12  mx-auto px-4 py-8">
       <h2 className="text-3xl font-extrabold text-center text-customTextColor mb-8">
         Frequently Asked Questions
       </h2>
@@ -44,14 +43,14 @@ const FAQ = () => {
           return (
             <div
               key={index}
-              className="border-b border-customBgColor hover:bg-customBgColor-bg transition duration-300 ease-in-out transform hover:scale-105 "
+              className="border-b border-customBgColor hover:bg-customBgColor-bg transition duration-300 ease-in-out transform hover:scale-105"
             >
               <div
                 className="flex items-center justify-between cursor-pointer"
                 onClick={() => toggleAnswer(index)}
               >
                 <div>
-                  <button className="w-full text-left py-4 px-6 text-xl font-semibold text-gray-800 ">
+                  <button className="w-full text-left py-4 px-6 text-xl font-semibold text-gray-800">
                     {item.question}
                   </button>
                 </div>
@@ -59,7 +58,7 @@ const FAQ = () => {
                   {isActive ? (
                     <IconCaretUpFilled />
                   ) : (
-                    <IconCaretDownFilled></IconCaretDownFilled>
+                    <IconCaretDownFilled />
                   )}
                 </div>
               </div>
@@ -67,7 +66,7 @@ const FAQ = () => {
               <div
                 className={`overflow-hidden transition-all duration-500 ease-in-out transform ${
                   isActive ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-                } `}
+                }`}
               >
                 <div className="p-6 bg-gray-50 text-gray-600">
                   <p>{item.answer}</p>
