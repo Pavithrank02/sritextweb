@@ -3,7 +3,7 @@ import { IconCaretDownFilled, IconCaretUpFilled } from "@tabler/icons-react";
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
-
+//
   const faqData = [
     {
       question: "What is your return policy?",
