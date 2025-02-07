@@ -5,9 +5,8 @@ const FloatingButton = () => {
   // Get the current location/path
   const location = useLocation();
 
-  // Check if the current path is '/contact'
   if (location.pathname === "/contact") {
-    return null; // Don't render the button on the contact page
+    return null; 
   }
 
   return (
