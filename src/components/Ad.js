@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import {contactNow,adDesc} from '../data.js'
-//dvs
+//dvsss
 const Ad = () => {
   return (
     <div className="flex flex-col sm:flex-row justify-evenly items-center h-auto sm:h-28 px-4 sm:px-8 border-4 border-customBgColor bg-customBgColor-bg">
