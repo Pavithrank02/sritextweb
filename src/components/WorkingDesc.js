@@ -3,14 +3,14 @@ import {infraDesc,clientDesc,whyDesc,infraDescTitle,clientDescTitle, whyDescTitl
 
 const WorkingDesc = () => {
   return (
-    <div className="flex flex-col justify-center items-center w-full h-full py-16 bg-customBgColor-bg dark:bg-gray-800">
+    <div className="flex flex-col justify-center items-center w-full h-full py-16 bg-customBgColor-bg ">
       {/* Our Infrastructure Section */}
       <div className="w-full sm:w-10/12 mb-16 px-4 sm:px-8">
         <p className="text-3xl sm:text-4xl font-extrabold text-customTextColor mb-8 text-center">
           {infraDescTitle}
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-between space-y-8 sm:space-y-0 sm:space-x-6">
-          <div className="w-full sm:w-1/2 text-justify text-lg font-medium text-customTextColor-dark dark:text-gray-200">
+          <div className="w-full sm:w-1/2 text-justify text-lg font-medium text-customTextColor-dark ">
             {infraDesc}
           </div>
           <div className="w-full sm:w-1/2 flex justify-center items-center">
@@ -46,7 +46,7 @@ const WorkingDesc = () => {
           {clientDescTitle}
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-between space-y-8 sm:space-y-0 sm:space-x-6">
-          <div className="w-full sm:w-1/2 text-justify text-lg text-customTextColor-dark dark:text-gray-200 font-medium">
+          <div className="w-full sm:w-1/2 text-justify text-lg text-customTextColor-dark  font-medium">
             {clientDesc}
           </div>
           <div className="w-full sm:w-1/2 flex justify-center items-center">

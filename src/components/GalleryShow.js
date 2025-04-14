@@ -118,9 +118,9 @@ export function GalleryShow() {
             </div>
             <div className="bg-slate-200 cursor-pointer p-2 mr-3">
               {expandStates[index] ? (
-                <IconMinus className="h-6 w-6 text-customTextColor font-extrabold dark:text-neutral-300" />
+                <IconMinus className="h-6 w-6 text-customTextColor font-extrabold " />
               ) : (
-                <IconPlus className="h-6 w-6 text-customTextColor font-extrabold dark:text-neutral-300" />
+                <IconPlus className="h-6 w-6 text-customTextColor font-extrabold " />
               )}
             </div>
           </div>

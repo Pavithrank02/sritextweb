@@ -85,7 +85,7 @@ const Header = () => {
         {/* Contact Button */}
         <div>
           <NavLink to="/contact">
-            <button className="w-40 h-10 rounded-xl bg-customBgColor border dark:border-white border-transparent text-white text-lg font-medium transition duration-300 ease-in-out hover:bg-green-700 hover:scale-110 hidden md:block">
+            <button className="w-40 h-10 rounded-xl bg-customBgColor border  border-transparent text-white text-lg font-medium transition duration-300 ease-in-out hover:bg-green-700 hover:scale-110 hidden md:block">
             {contactNow}
             </button>
           </NavLink>

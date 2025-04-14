@@ -14,7 +14,7 @@ export function FloatingDockDemo() {
     {
       title: "Home",
       icon: (
-        <IconHome className=" h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconHome className=" h-full w-full text-neutral-500 " />
       ),
       href: "/",
     },
@@ -22,28 +22,28 @@ export function FloatingDockDemo() {
     {
       title: "Products",
       icon: (
-        <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconTerminal2 className="h-full w-full text-neutral-500 " />
       ),
       href: "/product",
     },
     {
       title: "WhatsApp",
       icon: (
-        <IconBrandWhatsapp className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandWhatsapp className="h-full w-full text-neutral-500 " />
       ),
       href: "#",
     },
     {
       title: "Instagram",
       icon: (
-        <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandInstagram className="h-full w-full text-neutral-500 " />
       ),
       href: "https://www.instagram.com/",
     },
     {
       title: "Twitter",
       icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandX className="h-full w-full text-neutral-500 " />
       ),
       href: "#",
     },

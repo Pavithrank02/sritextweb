@@ -48,7 +48,7 @@ const FeedbackForm = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full p-2 border border-customBgColor rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full p-2 border border-customBgColor rounded-md focus:outline-none focus:ring-2 focus:ring-customBgColor"
           />
         </div>
 
@@ -67,7 +67,7 @@ const FeedbackForm = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full p-2 border border-customBgColor rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full p-2 border border-customBgColor rounded-md focus:outline-none focus:ring-2 focus:ring-customBgColor"
           />
         </div>
 
@@ -86,7 +86,7 @@ const FeedbackForm = () => {
             onChange={handleChange}
             required
             rows="4"
-            className="w-full p-2 border border-customBgColor rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full p-2 border border-customBgColor rounded-md focus:outline-none focus:ring-2 focus:ring-customBgColor"
           ></textarea>
         </div>
 
@@ -94,7 +94,7 @@ const FeedbackForm = () => {
         <div className="flex flex-row justify-center">
           <button
             type="submit"
-            className="w-48 sm:w-56 font-bold py-2 bg-customBgColor text-white rounded-md hover:bg-customTextColor-light focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-48 sm:w-56 font-bold py-2 bg-customBgColor text-white rounded-md hover:bg-customTextColor-light focus:outline-none focus:ring-2 focus:ring-customBgColor"
           >
             Submit Feedback
           </button>

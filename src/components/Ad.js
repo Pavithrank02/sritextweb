@@ -10,7 +10,7 @@ const Ad = () => {
       </div>
       <div className="mt-4 sm:mt-0 w-full mb-5 sm:mb-0 sm:w-auto">
         <NavLink to="/contact">
-          <button className="w-full sm:w-40 h-12 sm:h-14 rounded-xl bg-customBgColor border dark:border-white border-transparent text-white font-bold text-sm sm:text-base transition duration-300 ease-in-out hover:bg-green-500 hover:scale-110">
+          <button className="w-full sm:w-40 h-12 sm:h-14 rounded-xl bg-customBgColor border  text-white font-bold text-sm sm:text-base transition duration-300 ease-in-out hover:bg-green-500 hover:scale-110">
             {contactNow}
           </button>
         </NavLink>

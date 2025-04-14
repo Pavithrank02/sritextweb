@@ -3,7 +3,7 @@ import { AnimatedTestimonialsDemo } from "./AnimatedTestimonialsDemo";
 import { TextGenerate } from "./TextGenerate";
 
 const Modals = ({ isOpen, onClose, card, modalDatas }) => {
-  console.log(card);
+
   return (
     <div
       className={`fixed inset-0 bg-customBgColor-dark bg-opacity-50 flex items-center justify-center transition-opacity z-50 ${
@@ -27,8 +27,7 @@ const Modals = ({ isOpen, onClose, card, modalDatas }) => {
         /> */}
         <div>
           <AnimatedTestimonialsDemo modalDatas={card.modalData} />
-          {card.description ? <TextGenerate words={card?.description}/> : ""}
-            
+          {card.description ? <TextGenerate words={card?.description} /> : ""}
         </div>
 
         {/* Table displaying product details */}
@@ -62,14 +61,24 @@ const Modals = ({ isOpen, onClose, card, modalDatas }) => {
               ))}
           </tbody>
         </table>
+        <div className="flex flex-row justify-evenly ">
+          <div className="mt-4 flex justify-end ">
+            <button
+              onClick={onClose}
+              className="bg-customBgColor font-bold text-xl text-customBgColor-bg px-6 py-3 rounded-lg hover:bg-customTextColor-light transition w-36"
+            >
+              Order
+            </button>
+          </div>
 
-        <div className="mt-4 flex justify-end">
-          <button
-            onClick={onClose}
-            className="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition"
-          >
-            Close
-          </button>
+          <div className="mt-4 flex justify-end">
+            <button
+              onClick={onClose}
+              className="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition"
+            >
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </div>

@@ -25,7 +25,7 @@ export function FlipWordsDemo() {
       {/* Contact Button */}
       <div>
         <NavLink to="/contact">
-          <button className="w-36 sm:w-40 h-12 sm:h-14 rounded-2xl bg-customBgColor border dark:border-white border-transparent text-white font-semibold text-base sm:text-lg">
+          <button className="w-36 sm:w-40 h-12 sm:h-14 rounded-2xl bg-customBgColor border border-transparent text-white font-semibold text-base sm:text-lg">
             {contactNow}
           </button>
         </NavLink>
