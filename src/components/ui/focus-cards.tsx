@@ -12,7 +12,7 @@ export const Card = React.memo(
       onMouseLeave={() => setHovered(null)}
       onClick={() => onCardClick(card)} // Trigger modal on card click
       className={cn(
-        "rounded-lg relative bg-gray-100 dark:bg-neutral-600 overflow-hidden h-60 md:h-96 w-full transition-all duration-300 ease-out",
+        "rounded-lg relative  overflow-hidden h-60 md:h-96 w-full transition-all duration-300 ease-out",
         hovered !== null && hovered !== index && "blur-sm scale-[0.98]"
       )}
     >
@@ -59,7 +59,7 @@ export function FocusCards({ cards, size, width,modalData }) {
   
   return (
     <div className="md:flex md:justify-center ">
-      <div className="mt-28 mb-5 md:w-10/12 px-4 py-6 border-4 border-neutral-300 rounded-xl shadow-xl flex flex-col justify-center items-center">
+      <div className="mt-28 mb-5 md:w-10/12 px-4 py-6 border-4 bg-customBgColor-bg border-neutral-300 rounded-xl shadow-xl flex flex-col justify-center items-center">
         <div className="w-full">
           <p className="text-4xl font-extrabold mb-5 text-green-600 items-center">
             {cards && cards[0] && cards[0].List}
@@ -72,7 +72,7 @@ export function FocusCards({ cards, size, width,modalData }) {
         >
           {products.length > 0
             ? products.map((card, index) => (
-                <div className="flex flex-col justify-between border-4 border-green-500 rounded-xl shadow-xl" key={card.title}>
+                <div className="flex flex-col justify-between border-4 border-customBorderColor rounded-xl shadow-xl" key={card.title}>
                   <Card
                     card={card}
                     index={index}

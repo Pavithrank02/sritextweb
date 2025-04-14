@@ -57,22 +57,22 @@ export function GalleryShow() {
         "https://ik.imagekit.io/wratuu6c1/IMG_2669.jpg?updatedAt=1735360100730",
       ],
     },
-    {
-      name: "Office",
-      images: [
-        "https://ik.imagekit.io/wratuu6c1/IMG_2684.jpg?updatedAt=1735361971674",
-        "https://ik.imagekit.io/wratuu6c1/IMG_2681.jpg?updatedAt=1735361971587",
-        "https://ik.imagekit.io/wratuu6c1/IMG_2678.jpg?updatedAt=1735361971474",
-        "https://ik.imagekit.io/wratuu6c1/IMG_2676.jpg?updatedAt=1735361971413",
-        "https://ik.imagekit.io/wratuu6c1/IMG_2677.jpg?updatedAt=1735361971372",
-        "https://ik.imagekit.io/wratuu6c1/IMG_2679.jpg?updatedAt=1735361971290",
-        "https://ik.imagekit.io/wratuu6c1/IMG_2672.jpg?updatedAt=1735360101822",
-      ],
-    },
-    {
-      name: "Ginning Automation Systems",
-      images: ["<URL13>", "<URL14>", "<URL15>"],
-    },
+    // {
+    //   name: "Office",
+    //   images: [
+    //     "https://ik.imagekit.io/wratuu6c1/IMG_2684.jpg?updatedAt=1735361971674",
+    //     "https://ik.imagekit.io/wratuu6c1/IMG_2681.jpg?updatedAt=1735361971587",
+    //     "https://ik.imagekit.io/wratuu6c1/IMG_2678.jpg?updatedAt=1735361971474",
+    //     "https://ik.imagekit.io/wratuu6c1/IMG_2676.jpg?updatedAt=1735361971413",
+    //     "https://ik.imagekit.io/wratuu6c1/IMG_2677.jpg?updatedAt=1735361971372",
+    //     "https://ik.imagekit.io/wratuu6c1/IMG_2679.jpg?updatedAt=1735361971290",
+    //     "https://ik.imagekit.io/wratuu6c1/IMG_2672.jpg?updatedAt=1735360101822",
+    //   ],
+    // },
+    // {
+    //   name: "Ginning Automation Systems",
+    //   images: ["<URL13>", "<URL14>", "<URL15>"],
+    // },
     // { name: "Cotton Bale Press", images: ["<URL16>", "<URL17>", "<URL18>"] },
     // {
     //   name: "Lint Super Cleaning Machine",
@@ -110,7 +110,7 @@ export function GalleryShow() {
         >
           {/* The div with the border and content */}
           <div
-            className="w-10/12 h-16 border-4 border-green-700 flex flex-row justify-between items-center rounded-md p-3"
+            className="w-10/12 h-16 border-4 border-customBorderColor flex flex-row justify-between items-center rounded-md p-3"
             onClick={() => handleExpand(index)}
           >
             <div className="text-lg font-extrabold cursor-pointer w-full sm:w-2/3 md:w-1/2 ml-3 truncate">
@@ -118,9 +118,9 @@ export function GalleryShow() {
             </div>
             <div className="bg-slate-200 cursor-pointer p-2 mr-3">
               {expandStates[index] ? (
-                <IconMinus className="h-6 w-6 text-green-700 font-extrabold dark:text-neutral-300" />
+                <IconMinus className="h-6 w-6 text-customTextColor font-extrabold " />
               ) : (
-                <IconPlus className="h-6 w-6 text-green-700 font-extrabold dark:text-neutral-300" />
+                <IconPlus className="h-6 w-6 text-customTextColor font-extrabold " />
               )}
             </div>
           </div>

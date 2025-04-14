@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
 import Home from './view/Home';
 import AboutUs from './view/AboutUs';
 import Contact from './view/Contact';
@@ -8,10 +7,12 @@ import Gallery from './view/Gallery';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ScrollToTop from "./components/ScrollToTop";
+import "./global.css"
+import Order from './components/Order';
 
 function App() {
   return (
-    <div className="App">
+    <div className="scrollbar-hide">
       <Header />
       <ScrollToTop />
       <Routes>
@@ -20,6 +21,7 @@ function App() {
         <Route path='/contact' element={<Contact />}/>
         <Route path='/gallery' element={<Gallery />}/>
         <Route path='/product' element={<Product />}/>
+        <Route path='/order' element={<Order />}/>
       </Routes>
       <Footer />
     </div>

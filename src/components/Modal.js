@@ -1,18 +1,26 @@
 import React from "react";
 import { AnimatedTestimonialsDemo } from "./AnimatedTestimonialsDemo";
 import { TextGenerate } from "./TextGenerate";
+import { useNavigate } from "react-router-dom";
+import Order from "./Order";
 
 const Modals = ({ isOpen, onClose, card, modalDatas }) => {
-  console.log(card);
+
+  const navigate = useNavigate()
+
+  const handleOrder = () => {
+    navigate("/order", { state: { selectedCard: card } });
+  }
+
   return (
     <div
-      className={`fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center transition-opacity z-50 ${
+      className={`fixed inset-0 bg-customBgColor-dark bg-opacity-50 flex items-center justify-center transition-opacity z-50 ${
         isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
       onClick={onClose}
     >
       <div
-        className={`bg-white mt-8 rounded-lg max-w-4xl w-full p-6 md:p-8 transition-transform transform scrollbar-hide ${
+        className={`bg-customBgColor-bg mt-8 rounded-xl max-w-4xl w-full p-6 md:p-8 transition-transform transform scrollbar-hide ${
           isOpen ? "scale-100" : "scale-90 opacity-0"
         } max-h-[80vh] sm:max-h-[85vh] lg:max-h-[90vh] overflow-auto`}
         onClick={(e) => e.stopPropagation()}
@@ -27,14 +35,13 @@ const Modals = ({ isOpen, onClose, card, modalDatas }) => {
         /> */}
         <div>
           <AnimatedTestimonialsDemo modalDatas={card.modalData} />
-          <TextGenerate words={card.description} />
-            
+          {card.description ? <TextGenerate words={card?.description} /> : ""}
         </div>
 
         {/* Table displaying product details */}
         <table className="min-w-full table-auto mb-6 border-collapse rounded-lg overflow-hidden">
           <thead>
-            <tr className="bg-gradient-to-r from-indigo-600 to-blue-500 text-white">
+            <tr className="bg-gradient-to-r from-green-600 to-lime-500 text-white">
               <th className="px-6 py-3 text-left text-lg font-medium">
                 Attribute
               </th>
@@ -52,24 +59,34 @@ const Modals = ({ isOpen, onClose, card, modalDatas }) => {
                     index % 2 === 0 ? "bg-gray-50" : "bg-gray-100"
                   } hover:bg-blue-50 transition-all duration-300`}
                 >
-                  <td className="px-6 py-4 text-lg font-medium text-gray-800">
+                  <td className="px-6 py-4 text-lg font-medium text-customTextColor-dark">
                     {detail[0]}
                   </td>
-                  <td className="px-6 py-4 text-lg text-gray-600">
+                  <td className="px-6 py-4 text-lg text-customTextColor-dark">
                     {detail[1]}
                   </td>
                 </tr>
               ))}
           </tbody>
         </table>
+        <div className="flex flex-row justify-evenly ">
+          <div className="mt-4 flex justify-end ">
+            <button
+              onClick={handleOrder}
+              className="bg-customBgColor font-bold text-xl text-customBgColor-bg px-6 py-3 rounded-lg hover:bg-customTextColor-light transition w-36"
+            >
+              Order
+            </button>
+          </div>
 
-        <div className="mt-4 flex justify-end">
-          <button
-            onClick={onClose}
-            className="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition"
-          >
-            Close
-          </button>
+          <div className="mt-4 flex justify-end">
+            <button
+              onClick={onClose}
+              className="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition"
+            >
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </div>

@@ -56,7 +56,7 @@ const ProductSlider = () => {
   return (
     <div className="relative w-full h-4/6 overflow-hidden mt-5 mb-5">
       {/* Title */}
-      <h1 className="text-3xl sm:text-4xl font-extrabold mb-6 text-center text-green-700">
+      <h1 className="text-3xl sm:text-4xl font-extrabold mb-6 text-center text-customTextColor">
         Product Overview
       </h1>
 
@@ -83,7 +83,7 @@ const ProductSlider = () => {
         <div className="absolute top-1/2 left-0 transform -translate-y-1/2 z-10">
           <button
             onClick={prevSlide}
-            className="bg-gray-800 text-white p-4 rounded-full hover:bg-gray-600 focus:outline-none"
+            className="bg-gray-800 text-customBgColor-dark p-4 rounded-full hover:bg-gray-600 focus:outline-none"
           >
             &lt;
           </button>
@@ -93,7 +93,7 @@ const ProductSlider = () => {
         <div className="absolute top-1/2 right-0 transform -translate-y-1/2 z-10">
           <button
             onClick={nextSlide}
-            className="bg-gray-800 text-white p-4 rounded-full hover:bg-gray-600 focus:outline-none"
+            className="bg-gray-800 text-customBgColor-dark p-4 rounded-full hover:bg-gray-600 focus:outline-none"
           >
             &gt;
           </button>

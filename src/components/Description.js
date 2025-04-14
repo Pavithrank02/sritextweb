@@ -1,4 +1,5 @@
 import React from "react";
+import {AboutDesc} from '../data.js'
 
 const Description = () => {
   return (
@@ -15,31 +16,12 @@ const Description = () => {
 
         {/* Text Section */}
         <div className=" md:w-10/12  flex flex-col justify-start items-center sm:items-center">
-          <div className="font-bold text-4xl sm:text-5xl text-green-600 mb-4">
+          <div className="font-bold text-4xl sm:text-5xl text-customTextColor mb-4">
             <h1 className="font-extrabold text-center sm:text-left">
               About Sritex
             </h1>
           </div>
-          <div className="text-justify text-sm w-full sm:w-11/12 items-center font-normal sm:text-lg ">
-            Established in the year <span className="font-bold">2004</span>, we,{" "}
-            <span className="font-bold">“Sritex Hi Tech Machines”, </span> are
-            one of the prominent manufacturers and traders of a wide range of{" "}
-            <span className="font-bold">
-              Air Blower, Hydraulic Press Machine, Baling Press, Belt Conveyor,
-              Bucket Elevator Belt and Conveyor Belt
-            </span>
-            . We are a partnership based venture. Our range is easy to operate
-            and consume less amount of power. These products are offered to the
-            clients in different sizes and specifications. Moreover, we have the
-            required expertise to customize our range as per clients’ requirements.
-            We also test our range using latest techniques, so that flawless range
-            can be delivered to the clients. Owing to the superior quality of our
-            range and customized solutions, we have attained immense market
-            appreciation. In addition to this, we have a huge distribution network
-            across India, which enable us to timely deliver our consignments. Our
-            ethical business practice and transparency in dealings helped us in
-            attaining maximum client satisfaction.
-          </div>
+         {AboutDesc}
         </div>
       </div>
     </div>

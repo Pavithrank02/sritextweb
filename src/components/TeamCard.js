@@ -48,7 +48,7 @@ export const projects = [
       "Engineers are experts in their fields, creating and innovating constantly. As practitioners of engineering, engineering professionals deal with complex systems, structures, devices, and materials to fulfill functional requirements while also considering the limitations imposed by regulation, safety, cost, and more.",
     link: "https://stripe.com",
     icons: (
-      <IconUserCode className="h-12 w-12 sm:h-14 sm:w-14 mt-6 text-white dark:text-neutral-300" />
+      <IconUserCode className="h-12 w-12 sm:h-14 sm:w-14 mt-6 text-white " />
     ),
   },
   {
@@ -57,7 +57,7 @@ export const projects = [
       "Technocrats are individuals with technical training and occupations who perceive many important societal problems as being solvable with the applied use of technology and related applications.",
     link: "https://netflix.com",
     icons: (
-      <IconContract className="h-12 w-12 sm:h-14 sm:w-14 mt-6 text-white dark:text-neutral-300" />
+      <IconContract className="h-12 w-12 sm:h-14 sm:w-14 mt-6 text-white " />
     ),
   },
   {
@@ -66,7 +66,7 @@ export const projects = [
       "A quality control programme ensures that the completed products adhere to the intended quality standards and are error-free. Customers are more inclined to return and do business with the firm again when they obtain high-quality items that satisfy their expectations.",
     link: "https://google.com",
     icons: (
-      <IconCertificate className="h-12 w-12 sm:h-14 sm:w-14 mt-6 text-white dark:text-neutral-300" />
+      <IconCertificate className="h-12 w-12 sm:h-14 sm:w-14 mt-6 text-white " />
     ),
   },
   {
@@ -75,7 +75,7 @@ export const projects = [
       "Research and development (R&D) is the series of activities that companies undertake to innovate. R&D is often the first stage in the development process that results in market research, product development, and product testing.",
     link: "https://meta.com",
     icons: (
-      <IconAutomation className="h-12 w-12 sm:h-14 sm:w-14 mt-6 text-white dark:text-neutral-300" />
+      <IconAutomation className="h-12 w-12 sm:h-14 sm:w-14 mt-6 text-white " />
     ),
   },
   {
@@ -84,7 +84,7 @@ export const projects = [
       "Eligible Business Employees primarily engaged in sales and marketing activities for or relating to the Business of the Company Group Entities.",
     link: "https://amazon.com",
     icons: (
-      <IconReportMoney className="h-12 w-12 sm:h-14 sm:w-14 mt-6 text-white dark:text-neutral-300" />
+      <IconReportMoney className="h-12 w-12 sm:h-14 sm:w-14 mt-6 text-white " />
     ),
   },
   {
@@ -93,7 +93,7 @@ export const projects = [
       "A develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
     link: "https://microsoft.com",
     icons: (
-      <IconDeviceImacCode className="h-12 w-12 sm:h-14 sm:w-14 mt-6 text-white dark:text-neutral-300" />
+      <IconDeviceImacCode className="h-12 w-12 sm:h-14 sm:w-14 mt-6 text-white " />
     ),
   },
 ];
