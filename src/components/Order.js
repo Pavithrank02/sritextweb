@@ -45,7 +45,7 @@ const Order = () => {
             <div className="overflow-auto">
               <table className="w-full border-collapse mb-6 text-sm md:text-base">
                 <thead>
-                  <tr className="bg-blue-500 text-white">
+                  <tr className="bg-customTextColor-light text-white">
                     <th className="px-4 py-2 text-left font-medium">
                       Attribute
                     </th>
