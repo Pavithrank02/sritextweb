@@ -59,7 +59,7 @@ export function FocusCards({ cards, size, width,modalData }) {
   
   return (
     <div className="md:flex md:justify-center ">
-      <div className="mt-28 mb-5 md:w-10/12 px-4 py-6 border-4 border-neutral-300 rounded-xl shadow-xl flex flex-col justify-center items-center">
+      <div className="mt-28 mb-5 md:w-10/12 px-4 py-6 border-4 bg-customBgColor-bg border-neutral-300 rounded-xl shadow-xl flex flex-col justify-center items-center">
         <div className="w-full">
           <p className="text-4xl font-extrabold mb-5 text-green-600 items-center">
             {cards && cards[0] && cards[0].List}
