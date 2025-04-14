@@ -57,22 +57,22 @@ export function GalleryShow() {
         "https://ik.imagekit.io/wratuu6c1/IMG_2669.jpg?updatedAt=1735360100730",
       ],
     },
-    {
-      name: "Office",
-      images: [
-        "https://ik.imagekit.io/wratuu6c1/IMG_2684.jpg?updatedAt=1735361971674",
-        "https://ik.imagekit.io/wratuu6c1/IMG_2681.jpg?updatedAt=1735361971587",
-        "https://ik.imagekit.io/wratuu6c1/IMG_2678.jpg?updatedAt=1735361971474",
-        "https://ik.imagekit.io/wratuu6c1/IMG_2676.jpg?updatedAt=1735361971413",
-        "https://ik.imagekit.io/wratuu6c1/IMG_2677.jpg?updatedAt=1735361971372",
-        "https://ik.imagekit.io/wratuu6c1/IMG_2679.jpg?updatedAt=1735361971290",
-        "https://ik.imagekit.io/wratuu6c1/IMG_2672.jpg?updatedAt=1735360101822",
-      ],
-    },
-    {
-      name: "Ginning Automation Systems",
-      images: ["<URL13>", "<URL14>", "<URL15>"],
-    },
+    // {
+    //   name: "Office",
+    //   images: [
+    //     "https://ik.imagekit.io/wratuu6c1/IMG_2684.jpg?updatedAt=1735361971674",
+    //     "https://ik.imagekit.io/wratuu6c1/IMG_2681.jpg?updatedAt=1735361971587",
+    //     "https://ik.imagekit.io/wratuu6c1/IMG_2678.jpg?updatedAt=1735361971474",
+    //     "https://ik.imagekit.io/wratuu6c1/IMG_2676.jpg?updatedAt=1735361971413",
+    //     "https://ik.imagekit.io/wratuu6c1/IMG_2677.jpg?updatedAt=1735361971372",
+    //     "https://ik.imagekit.io/wratuu6c1/IMG_2679.jpg?updatedAt=1735361971290",
+    //     "https://ik.imagekit.io/wratuu6c1/IMG_2672.jpg?updatedAt=1735360101822",
+    //   ],
+    // },
+    // {
+    //   name: "Ginning Automation Systems",
+    //   images: ["<URL13>", "<URL14>", "<URL15>"],
+    // },
     // { name: "Cotton Bale Press", images: ["<URL16>", "<URL17>", "<URL18>"] },
     // {
     //   name: "Lint Super Cleaning Machine",
