@@ -57,7 +57,7 @@ const Order = () => {
                     <tr
                       key={index}
                       className={`${
-                        index % 2 === 0 ? "bg-gray-100" : "bg-gray-50"
+                        index % 2 === 0 ? "bg-customBgColor-bg" : "bg-white"
                       } hover:bg-blue-100 transition-all`}
                     >
                       <td className="px-4 py-2 text-gray-800">{detail[0]}</td>
