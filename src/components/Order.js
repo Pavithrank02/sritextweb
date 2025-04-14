@@ -28,7 +28,7 @@ const Order = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center py-8 px-4 md:px-6 lg:px-8">
+    <div className="min-h-screen bg-customBgColor-bg flex flex-col items-center py-8 px-4 md:px-6 lg:px-8 mt-28">
       <ToastContainer />
       <div className="max-w-4xl w-full bg-white shadow-lg rounded-lg p-6 md:p-8">
         <h1 className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-6">
