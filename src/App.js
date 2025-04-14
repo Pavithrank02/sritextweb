@@ -8,6 +8,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import ScrollToTop from "./components/ScrollToTop";
 import "./global.css"
+import Order from './components/Order';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/contact' element={<Contact />}/>
         <Route path='/gallery' element={<Gallery />}/>
         <Route path='/product' element={<Product />}/>
+        <Route path='/order' element={<Order />}/>
       </Routes>
       <Footer />
     </div>

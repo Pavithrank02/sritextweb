@@ -1,8 +1,16 @@
 import React from "react";
 import { AnimatedTestimonialsDemo } from "./AnimatedTestimonialsDemo";
 import { TextGenerate } from "./TextGenerate";
+import { useNavigate } from "react-router-dom";
+import Order from "./Order";
 
 const Modals = ({ isOpen, onClose, card, modalDatas }) => {
+
+  const navigate = useNavigate()
+
+  const handleOrder = () => {
+    navigate("/order", { state: { selectedCard: card } });
+  }
 
   return (
     <div
@@ -64,7 +72,7 @@ const Modals = ({ isOpen, onClose, card, modalDatas }) => {
         <div className="flex flex-row justify-evenly ">
           <div className="mt-4 flex justify-end ">
             <button
-              onClick={onClose}
+              onClick={handleOrder}
               className="bg-customBgColor font-bold text-xl text-customBgColor-bg px-6 py-3 rounded-lg hover:bg-customTextColor-light transition w-36"
             >
               Order
