@@ -4,6 +4,7 @@ import FloatingButton from "./FloatingButton";
 import img from "../assets/images/sritex.jpg";
 import {contactNow} from '../data.js'
 const Header = () => {
+  //
   const navigate = useNavigate();
   
   const handleClick = () => {
