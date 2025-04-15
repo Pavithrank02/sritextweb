@@ -1,6 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ProductOverview = ({ product }) => {
+
+  const navigate = useNavigate()
+
+  const handleClick = () => {
+    navigate("/contact")
+  }
   if (!product) {
     return <p>Loading...</p>;
   }
@@ -19,7 +26,7 @@ const ProductOverview = ({ product }) => {
         <p className="text-customTextColor-dark text-sm sm:text-base md:text-sm truncate flex-grow mb-2">{product.description}</p>
 
         {/* Product Price */}
-        <p className="text-xl sm:text-lg md:text-xl font-bold text-customTextColor-dark mt-2">{`$${product.price.toFixed(2)}`}</p>
+        <p onClick={handleClick} className="text-xl sm:text-lg md:text-xl font-bold text-customTextColor-dark mt-2">{`${product.price}`}</p>
       </div>
     </div>
   );
