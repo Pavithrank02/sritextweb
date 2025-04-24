@@ -17,7 +17,7 @@ const FeedbackForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // For now, log the data to the console
+    // For now, log the data to the consoles
     console.log("Feedback Submitted: ", formData);
     alert("Thank you for your feedback!");
     setFormData({
