@@ -14,7 +14,7 @@ const FeedbackForm = () => {
       [name]: value,
     }));
   };
-
+//
   const handleSubmit = (e) => {
     e.preventDefault();
     // For now, log the data to the consoles
